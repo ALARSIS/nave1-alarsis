@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALARSIS · Nave 1</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0f1117; min-height: 100vh; display: flex; flex-direction: column; font-family: sans-serif; }
+
+/* HEADER */
+.header { background: #0f1117; padding: 12px 20px 0; border-bottom: 1px solid #1e2330; }
+.header-top { display: flex; align-items: center; gap: 16px; margin-bottom: 10px; }
+.logo { color: #00d4aa; font-family: monospace; font-size: 11px; letter-spacing: .2em; font-weight: 700; }
+.nave-title { color: #4a5568; font-family: monospace; font-size: 11px; }
+
+/* TABS */
+.tabs { display: flex; gap: 2px; }
+.tab { padding: 8px 22px; font-family: monospace; font-size: 11px; font-weight: 700; letter-spacing: .08em;
+       color: #4a5568; background: #161922; border: 1px solid #1e2330; border-bottom: none;
+       cursor: pointer; border-radius: 4px 4px 0 0; transition: all .15s; user-select: none; }
+.tab:hover { color: #8a93a8; background: #1a1f2e; }
+.tab.active { color: #00d4aa; background: #0f1117; border-color: #2a3040; border-bottom-color: #0f1117; }
+
+/* MAIN CONTENT */
+.main { flex: 1; display: flex; flex-direction: row; overflow: hidden; }
+.tabs-content { flex: 1; display: flex; flex-direction: column; padding: 20px; overflow: hidden; }
+.panel-wrap { display: none; flex: 1; }
+.panel-wrap.active { display: flex; }
+
+/* SVG */
+svg { flex: 1; height: auto; display: block; }
+
+/* ZONAS */
+.zona { cursor: pointer; }
+.zona rect { fill: #2d6a3a; stroke: #5aaa6a; stroke-width: 1.5; transition: filter .15s; }
+.zona:hover rect { filter: brightness(1.3); }
+.zona.sel rect { filter: brightness(1.6); stroke-width: 2.5; stroke: #00ffaa; }
+.zona text { fill: #aaeebb; font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; font-family: sans-serif; }
+
+/* ESTANTERÍAS */
+.est { cursor: pointer; }
+.est rect { fill: #c8dff5; stroke: #5a90c0; stroke-width: .8; transition: all .15s; }
+.est:hover rect { fill: #a0c8f0; stroke: #00d4aa; stroke-width: 1.3; }
+.est.sel rect { fill: #80b8e8; stroke: #00ffcc; stroke-width: 1.6; }
+.est text { fill: #1a3a5a; font-size: 11px; font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; font-family: monospace; }
+
+/* PANEL LATERAL */
+#panel { width: 0; overflow: hidden; background: #161922; border-left: 2px solid #2a3040;
+         transition: width .25s; flex-shrink: 0; display: flex; flex-direction: column; }
+#panel.open { width: 280px; }
+#ph { padding: 14px 16px 10px; border-bottom: 1px solid #2a3040; }
+#pt { font-family: monospace; font-size: 15px; font-weight: 700; color: #00d4aa; }
+#ps { font-size: 10px; color: #8a93a8; margin-top: 3px; }
+#pcl { float: right; background: none; border: none; color: #8a93a8; font-size: 20px; cursor: pointer; }
+#pcl:hover { color: #fff; }
+#plist { flex: 1; overflow-y: auto; padding: 6px 0; }
+.ri { padding: 9px 14px; border-bottom: 1px solid rgba(42,48,64,.5); }
+.ri:hover { background: #1e2330; }
+.ri-top { display: flex; justify-content: space-between; }
+.ri-ref { font-family: monospace; font-size: 10px; font-weight: 700; color: #0099ff; }
+.ri-stock { font-family: monospace; font-size: 12px; font-weight: 700; }
+.ok{color:#00d4aa}.warn{color:#ffa726}.zero{color:#ff4d6d}
+.ri-nom { font-size: 11px; color: #e8ecf4; margin-top: 2px; }
+.ri-ubi { font-size: 9px; color: #8a93a8; margin-top: 3px; font-family: monospace; }
+.empty { text-align: center; color: #4a5568; font-size: 11px; padding: 40px 14px; line-height: 1.8; }
+.plbl { fill: #5a4a00; font-size: 7px; font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; font-family: monospace; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <span class="logo">ALARSIS</span>
+    <span class="nave-title">▸ NAVE 1</span>
+  </div>
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('a0')">ALTILLO 0</div>
+    <div class="tab" onclick="showTab('a1')">ALTILLO 1</div>
+    <div class="tab" onclick="showTab('a2')">ALTILLO 2</div>
+  </div>
+</div>
+
+<div class="main">
+<div class="tabs-content">
+
+  <!-- ALTILLO 0 -->
+  <div class="panel-wrap active" id="tab-a0">
+    <svg viewBox="0 0 760 330" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- FONDO BEIGE -->
+  <rect x="0" y="0" width="760" height="330" fill="#f0e8c0"></rect>
+
+  <!-- ── FILA SUPERIOR ── -->
+  <!-- Z01: zona verde cabecera izquierda -->
+  <g class="zona" id="z-Z01" onclick="clickZ(this,&#39;Z01&#39;)">
+    <rect x="4" y="4" width="46" height="36" rx="3"></rect>
+    <text x="27" y="22" font-size="10">Z01</text>
+  </g>
+
+  <!-- E08: pegada a Z01 -->
+  <g class="est" id="e-top-e08" onclick="clickE(this,&#39;E08&#39;,&#39;TOP&#39;)">
+    <rect x="54" y="4" width="160" height="36" rx="2"></rect>
+    <text x="134" y="22">E08</text>
+  </g>
+
+  <!-- E06, E04, E02: derecha -->
+  <g class="est" id="e-top-e06" onclick="clickE(this,&#39;E06&#39;,&#39;TOP&#39;)">
+    <rect x="360" y="4" width="120" height="36" rx="2"></rect>
+    <text x="420" y="22">E06</text>
+  </g>
+  <g class="est" id="e-top-e04" onclick="clickE(this,&#39;E04&#39;,&#39;TOP&#39;)">
+    <rect x="486" y="4" width="120" height="36" rx="2"></rect>
+    <text x="546" y="22">E04</text>
+  </g>
+  <g class="est" id="e-top-e02" onclick="clickE(this,&#39;E02&#39;,&#39;TOP&#39;)">
+    <rect x="612" y="4" width="120" height="36" rx="2"></rect>
+    <text x="672" y="22">E02</text>
+  </g>
+
+  <!-- ── ZONA DE PASO ── -->
+  <rect x="0" y="44" width="760" height="24" fill="#f5c800" stroke="#c8a000" stroke-width=".8"></rect>
+  <text font-family="monospace" font-size="9" fill="#5a4a00" text-anchor="middle" dominant-baseline="central" letter-spacing=".12em" x="380" y="56" pointer-events="none">ZONA DE PASO</text>
+
+  <!-- ── CUERPO PRINCIPAL ── -->
+  <!-- Z02: zona verde grande izquierda -->
+  <g class="zona" id="z-Z02" onclick="clickZ(this,&#39;Z02&#39;)">
+    <rect x="4" y="72" width="46" height="250" rx="3"></rect>
+    <text x="27" y="197" font-size="10">Z02</text>
+  </g>
+
+  <!-- E12: estantería vertical centro -->
+  <g class="est" id="e-e12" onclick="clickE(this,&#39;E12&#39;,&#39;CEN&#39;)">
+    <rect x="240" y="90" width="60" height="100" rx="2"></rect>
+    <text x="270" y="140">E12</text>
+  </g>
+
+  <!-- E10: estantería vertical centro, debajo de E12 -->
+  <g class="est" id="e-e10" onclick="clickE(this,&#39;E10&#39;,&#39;CEN&#39;)">
+    <rect x="240" y="196" width="60" height="100" rx="2"></rect>
+    <text x="270" y="246">E10</text>
+  </g>
+
+  <!-- ZONA DE PASO en forma de T - relleno verde claro + borde amarillo grueso -->
+  <path d="M0,44 L760,44 L760,68 L420,68 L420,296 L340,296 L340,68 L0,68 Z" fill="#d8ecc8" stroke="#f5c800" stroke-width="4"></path>
+  <text font-family="monospace" font-size="9" fill="#5a7a30" text-anchor="middle" dominant-baseline="central" letter-spacing=".12em" x="380" y="56" pointer-events="none">ZONA DE PASO</text>
+
+  <!-- PUERTA -->
+  <rect x="340" y="296" width="80" height="28" fill="#f5c800" stroke="#c8a000" stroke-width="1" rx="2"></rect>
+  <text font-family="monospace" font-size="9" fill="#5a4a00" text-anchor="middle" dominant-baseline="central" letter-spacing=".08em" x="380" y="310" pointer-events="none">PUERTA</text>
+
+</svg>
+  </div>
+
+  <!-- ALTILLO 1 -->
+  <div class="panel-wrap" id="tab-a1">
+    <svg viewBox="0 0 772 292" xmlns="http://www.w3.org/2000/svg">
+
+  <rect x="0" y="0" width="772" height="292" fill="#f0e8c0"/>
+  <rect x="0" y="0" width="772" height="20" fill="#f5c800" stroke="#c8a000" stroke-width=".8"/>
+  <text font-family="monospace" font-size="9" fill="#5a4a00" text-anchor="middle" dominant-baseline="central" letter-spacing=".12em" x="386" y="10" pointer-events="none">ZONA DE PASO</text>
+
+  <!-- ZONAS VERDES -->
+  <g class="zona" id="z-Z5" onclick="clickZ(this,'Z5')"><rect x="4" y="22" width="220" height="26" rx="3"/><text x="114" y="35" font-size="13">Z5</text></g>
+  <g class="zona" id="z-Z4" onclick="clickZ(this,'Z4')"><rect x="228" y="22" width="34" height="260" rx="3"/><text x="245" y="152" font-size="10">Z4</text></g>
+  <g class="zona" id="z-Z3" onclick="clickZ(this,'Z3')"><rect x="266" y="22" width="418" height="26" rx="3"/><text x="475" y="35" font-size="13">Z3</text></g>
+  <rect x="688" y="22" width="26" height="170" rx="2" fill="#f0e8c0" stroke="#a09050" stroke-width="1.5"/>
+  <text x="701" y="107" font-family="monospace" font-size="13" font-weight="700" fill="#5a4a00" text-anchor="middle" dominant-baseline="central" pointer-events="none">P0</text>
+  <g class="est" id="e-e04" onclick="clickE(this,'E04','COL')"><rect x="718" y="22" width="20" height="82" rx="2"/><text x="728" y="63">E04</text></g>
+  <g class="est" id="e-e02" onclick="clickE(this,'E02','COL')"><rect x="718" y="108" width="20" height="82" rx="2"/><text x="728" y="149">E02</text></g>
+  <g class="zona" id="z-Z2" onclick="clickZ(this,'Z2')"><rect x="742" y="22" width="26" height="168" rx="3"/><text x="755" y="106" font-size="9">Z2</text></g>
+  <g class="zona" id="z-Z1" onclick="clickZ(this,'Z1')"><rect x="688" y="196" width="80" height="86" rx="3"/><text x="728" y="239" font-size="11">Z1</text></g>
+
+  <!-- PASILLOS -->
+  <rect x="4"   y="50"  width="220" height="22" fill="#f0e8c0" stroke="#c8b870" stroke-width="1.2" rx="1"/>
+  <text x="114" y="61"  font-family="monospace" font-size="13" font-weight="700" fill="#7a6a30" text-anchor="middle" dominant-baseline="central" pointer-events="none">P4</text>
+  <rect x="4"   y="116" width="220" height="22" fill="#f0e8c0" stroke="#c8b870" stroke-width="1.2" rx="1"/>
+  <text x="114" y="127" font-family="monospace" font-size="13" font-weight="700" fill="#7a6a30" text-anchor="middle" dominant-baseline="central" pointer-events="none">P3</text>
+  <rect x="4"   y="178" width="220" height="22" fill="#f0e8c0" stroke="#c8b870" stroke-width="1.2" rx="1"/>
+  <text x="114" y="189" font-family="monospace" font-size="13" font-weight="700" fill="#7a6a30" text-anchor="middle" dominant-baseline="central" pointer-events="none">P2</text>
+  <rect x="4"   y="240" width="220" height="22" fill="#f0e8c0" stroke="#c8b870" stroke-width="1.2" rx="1"/>
+  <text x="114" y="251" font-family="monospace" font-size="13" font-weight="700" fill="#7a6a30" text-anchor="middle" dominant-baseline="central" pointer-events="none">P1</text>
+  <rect x="266" y="50"  width="418" height="22" fill="#f0e8c0" stroke="#c8b870" stroke-width="1.2" rx="1"/>
+  <text x="475" y="61"  font-family="monospace" font-size="13" font-weight="700" fill="#7a6a30" text-anchor="middle" dominant-baseline="central" pointer-events="none">P4</text>
+  <rect x="266" y="116" width="418" height="22" fill="#f0e8c0" stroke="#c8b870" stroke-width="1.2" rx="1"/>
+  <text x="475" y="127" font-family="monospace" font-size="13" font-weight="700" fill="#7a6a30" text-anchor="middle" dominant-baseline="central" pointer-events="none">P3</text>
+  <rect x="266" y="178" width="418" height="22" fill="#f0e8c0" stroke="#c8b870" stroke-width="1.2" rx="1"/>
+  <text x="475" y="189" font-family="monospace" font-size="13" font-weight="700" fill="#7a6a30" text-anchor="middle" dominant-baseline="central" pointer-events="none">P2</text>
+  <rect x="266" y="240" width="418" height="22" fill="#f0e8c0" stroke="#c8b870" stroke-width="1.2" rx="1"/>
+  <text x="475" y="251" font-family="monospace" font-size="13" font-weight="700" fill="#7a6a30" text-anchor="middle" dominant-baseline="central" pointer-events="none">P1</text>
+
+  <!-- ESTANTERÍAS Z5: pegadas a borde derecho x=224 -->
+  <!-- E13=x8 w42, E11=x54 w76, E09=x134 w86(fin=220) -->
+  <g class="est" id="e-z5-p4-e13" onclick="clickE(this,'E13','Z5-P4')"><rect x="8"   y="74"  width="42" height="20" rx="2"/><text x="29"  y="84">E13</text></g>
+  <g class="est" id="e-z5-p4-e11" onclick="clickE(this,'E11','Z5-P4')"><rect x="54"  y="74"  width="76" height="20" rx="2"/><text x="92"  y="84">E11</text></g>
+  <g class="est" id="e-z5-p4-e09" onclick="clickE(this,'E09','Z5-P4')"><rect x="134" y="74"  width="86" height="20" rx="2"/><text x="177" y="84">E09</text></g>
+  <g class="est" id="e-z5-p4-e14" onclick="clickE(this,'E14','Z5-P4')"><rect x="8"   y="96"  width="42" height="20" rx="2"/><text x="29"  y="106">E14</text></g>
+  <g class="est" id="e-z5-p4-e12" onclick="clickE(this,'E12','Z5-P4')"><rect x="54"  y="96"  width="76" height="20" rx="2"/><text x="92"  y="106">E12</text></g>
+  <g class="est" id="e-z5-p4-e10" onclick="clickE(this,'E10','Z5-P4')"><rect x="134" y="96"  width="86" height="20" rx="2"/><text x="177" y="106">E10</text></g>
+  <g class="est" id="e-z5-p3-e13" onclick="clickE(this,'E13','Z5-P3')"><rect x="8"   y="138" width="42" height="20" rx="2"/><text x="29"  y="148">E13</text></g>
+  <g class="est" id="e-z5-p3-e11" onclick="clickE(this,'E11','Z5-P3')"><rect x="54"  y="138" width="76" height="20" rx="2"/><text x="92"  y="148">E11</text></g>
+  <g class="est" id="e-z5-p3-e09" onclick="clickE(this,'E09','Z5-P3')"><rect x="134" y="138" width="86" height="20" rx="2"/><text x="177" y="148">E09</text></g>
+  <g class="est" id="e-z5-p3-e14" onclick="clickE(this,'E14','Z5-P3')"><rect x="8"   y="158" width="42" height="20" rx="2"/><text x="29"  y="168">E14</text></g>
+  <g class="est" id="e-z5-p3-e12" onclick="clickE(this,'E12','Z5-P3')"><rect x="54"  y="158" width="76" height="20" rx="2"/><text x="92"  y="168">E12</text></g>
+  <g class="est" id="e-z5-p3-e10" onclick="clickE(this,'E10','Z5-P3')"><rect x="134" y="158" width="86" height="20" rx="2"/><text x="177" y="168">E10</text></g>
+  <g class="est" id="e-z5-p2-e11" onclick="clickE(this,'E11','Z5-P2')"><rect x="8"   y="200" width="42" height="20" rx="2"/><text x="29"  y="210">E11</text></g>
+  <g class="est" id="e-z5-p2-e09" onclick="clickE(this,'E09','Z5-P2')"><rect x="54"  y="200" width="76" height="20" rx="2"/><text x="92"  y="210">E09</text></g>
+  <g class="est" id="e-z5-p2-e07" onclick="clickE(this,'E07','Z5-P2')"><rect x="134" y="200" width="86" height="20" rx="2"/><text x="177" y="210">E07</text></g>
+  <g class="est" id="e-z5-p2-e12" onclick="clickE(this,'E12','Z5-P2')"><rect x="8"   y="220" width="42" height="20" rx="2"/><text x="29"  y="230">E12</text></g>
+  <g class="est" id="e-z5-p2-e10" onclick="clickE(this,'E10','Z5-P2')"><rect x="54"  y="220" width="76" height="20" rx="2"/><text x="92"  y="230">E10</text></g>
+  <g class="est" id="e-z5-p2-e08" onclick="clickE(this,'E08','Z5-P2')"><rect x="134" y="220" width="86" height="20" rx="2"/><text x="177" y="230">E08</text></g>
+  <g class="est" id="e-z5-p1-e17" onclick="clickE(this,'E17','Z5-P1')"><rect x="44"  y="262" width="60" height="20" rx="2"/><text x="74"  y="272">E17</text></g>
+  <g class="est" id="e-z5-p1-e15" onclick="clickE(this,'E15','Z5-P1')"><rect x="124" y="262" width="96" height="20" rx="2"/><text x="172" y="272">E15</text></g>
+
+  <!-- ESTANTERÍAS Z3: pegadas a borde izquierdo x=266 -->
+  <!-- E07=x266 w80, E05=x350 w104, E03=x458 w80, E01=x542 w80(fin=622) -->
+  <g class="est" id="e-z3-p4-e07" onclick="clickE(this,'E07','Z3-P4')"><rect x="266" y="74"  width="80" height="20" rx="2"/><text x="306" y="84">E07</text></g>
+  <g class="est" id="e-z3-p4-e05" onclick="clickE(this,'E05','Z3-P4')"><rect x="350" y="74"  width="104" height="20" rx="2"/><text x="402" y="84">E05</text></g>
+  <g class="est" id="e-z3-p4-e03" onclick="clickE(this,'E03','Z3-P4')"><rect x="458" y="74"  width="80" height="20" rx="2"/><text x="498" y="84">E03</text></g>
+  <g class="est" id="e-z3-p4-e01" onclick="clickE(this,'E01','Z3-P4')"><rect x="542" y="74"  width="138" height="20" rx="2"/><text x="611" y="84">E01</text></g>
+  <g class="est" id="e-z3-p4-e08" onclick="clickE(this,'E08','Z3-P4')"><rect x="266" y="96"  width="80" height="20" rx="2"/><text x="306" y="106">E08</text></g>
+  <g class="est" id="e-z3-p4-e06" onclick="clickE(this,'E06','Z3-P4')"><rect x="350" y="96"  width="104" height="20" rx="2"/><text x="402" y="106">E06</text></g>
+  <g class="est" id="e-z3-p4-e04" onclick="clickE(this,'E04','Z3-P4')"><rect x="458" y="96"  width="80" height="20" rx="2"/><text x="498" y="106">E04</text></g>
+  <g class="est" id="e-z3-p4-e02" onclick="clickE(this,'E02','Z3-P4')"><rect x="542" y="96"  width="138" height="20" rx="2"/><text x="611" y="106">E02</text></g>
+  <g class="est" id="e-z3-p3-e07" onclick="clickE(this,'E07','Z3-P3')"><rect x="266" y="138" width="80" height="20" rx="2"/><text x="306" y="148">E07</text></g>
+  <g class="est" id="e-z3-p3-e05" onclick="clickE(this,'E05','Z3-P3')"><rect x="350" y="138" width="104" height="20" rx="2"/><text x="402" y="148">E05</text></g>
+  <g class="est" id="e-z3-p3-e03" onclick="clickE(this,'E03','Z3-P3')"><rect x="458" y="138" width="80" height="20" rx="2"/><text x="498" y="148">E03</text></g>
+  <g class="est" id="e-z3-p3-e01" onclick="clickE(this,'E01','Z3-P3')"><rect x="542" y="138" width="138" height="20" rx="2"/><text x="611" y="148">E01</text></g>
+  <g class="est" id="e-z3-p3-e08" onclick="clickE(this,'E08','Z3-P3')"><rect x="266" y="158" width="80" height="20" rx="2"/><text x="306" y="168">E08</text></g>
+  <g class="est" id="e-z3-p3-e06" onclick="clickE(this,'E06','Z3-P3')"><rect x="350" y="158" width="104" height="20" rx="2"/><text x="402" y="168">E06</text></g>
+  <g class="est" id="e-z3-p3-e04" onclick="clickE(this,'E04','Z3-P3')"><rect x="458" y="158" width="80" height="20" rx="2"/><text x="498" y="168">E04</text></g>
+  <g class="est" id="e-z3-p3-e02" onclick="clickE(this,'E02','Z3-P3')"><rect x="542" y="158" width="138" height="20" rx="2"/><text x="611" y="168">E02</text></g>
+  <!-- P2 Z3: empieza en x=266 pegada a Z4, igual que P4 y P3 -->
+  <g class="est" id="e-z3-p2-e05" onclick="clickE(this,'E05','Z3-P2')"><rect x="266" y="200" width="104" height="20" rx="2"/><text x="318" y="210">E05</text></g>
+  <g class="est" id="e-z3-p2-e03" onclick="clickE(this,'E03','Z3-P2')"><rect x="374" y="200" width="100" height="20" rx="2"/><text x="424" y="210">E03</text></g>
+  <g class="est" id="e-z3-p2-e01" onclick="clickE(this,'E01','Z3-P2')"><rect x="478" y="200" width="202" height="20" rx="2"/><text x="579" y="210">E01</text></g>
+  <g class="est" id="e-z3-p2-e06" onclick="clickE(this,'E06','Z3-P2')"><rect x="266" y="220" width="104" height="20" rx="2"/><text x="318" y="230">E06</text></g>
+  <g class="est" id="e-z3-p2-e04" onclick="clickE(this,'E04','Z3-P2')"><rect x="374" y="220" width="100" height="20" rx="2"/><text x="424" y="230">E04</text></g>
+  <g class="est" id="e-z3-p2-e02" onclick="clickE(this,'E02','Z3-P2')"><rect x="478" y="220" width="202" height="20" rx="2"/><text x="579" y="230">E02</text></g>
+  <!-- P1 Z3 -->
+  <g class="est" id="e-z3-p1-e13" onclick="clickE(this,'E13','Z3-P1')"><rect x="266" y="262" width="44" height="20" rx="2"/><text x="288" y="272">E13</text></g>
+  <g class="est" id="e-z3-p1-e11" onclick="clickE(this,'E11','Z3-P1')"><rect x="314" y="262" width="44" height="20" rx="2"/><text x="336" y="272">E11</text></g>
+  <g class="est" id="e-z3-p1-e09" onclick="clickE(this,'E09','Z3-P1')"><rect x="362" y="262" width="44" height="20" rx="2"/><text x="384" y="272">E09</text></g>
+  <g class="est" id="e-z3-p1-e07" onclick="clickE(this,'E07','Z3-P1')"><rect x="410" y="262" width="44" height="20" rx="2"/><text x="432" y="272">E07</text></g>
+  <g class="est" id="e-z3-p1-e05" onclick="clickE(this,'E05','Z3-P1')"><rect x="458" y="262" width="44" height="20" rx="2"/><text x="480" y="272">E05</text></g>
+  <g class="est" id="e-z3-p1-e03" onclick="clickE(this,'E03','Z3-P1')"><rect x="506" y="262" width="44" height="20" rx="2"/><text x="528" y="272">E03</text></g>
+  <g class="est" id="e-z3-p1-e01" onclick="clickE(this,'E01','Z3-P1')"><rect x="554" y="262" width="126" height="20" rx="2"/><text x="617" y="272">E01</text></g>
+  <text x="696" y="272" fill="#8a9090" font-size="16" text-anchor="middle">&#8679;</text>
+
+</svg>
+  </div>
+
+  <!-- ALTILLO 2 -->
+  <div class="panel-wrap" id="tab-a2">
+    <svg viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- FONDO -->
+  <rect x="0" y="0" width="760" height="300" fill="#f0e8c0"/>
+
+  <!-- ZONA DE PASO -->
+  <rect x="0" y="0" width="760" height="20" fill="#f5c800" stroke="#c8a000" stroke-width=".8"/>
+  <text font-family="monospace" font-size="9" fill="#5a4a00" text-anchor="middle" dominant-baseline="central" letter-spacing=".12em" x="380" y="10" pointer-events="none">ZONA DE PASO</text>
+
+  <!-- ═══ BLOQUES IZQUIERDA — pasillos con ancho exacto de estanterías x=6..216 ═══ -->
+
+  <text x="111" y="29" font-family="monospace" font-size="13" font-weight="700" fill="#7a6a30" text-anchor="middle" dominant-baseline="central" pointer-events="none">P4</text>
+  <g class="est" id="e-p4-e03" onclick="clickE(this,'E03','P4')"><rect x="6"   y="38" width="100" height="22" rx="2"/><text x="56"  y="49">E03</text></g>
+  <g class="est" id="e-p4-e01" onclick="clickE(this,'E01','P4')"><rect x="110" y="38" width="106" height="22" rx="2"/><text x="163" y="49">E01</text></g>
+  <g class="est" id="e-p4-e04" onclick="clickE(this,'E04','P4')"><rect x="6"   y="62" width="100" height="22" rx="2"/><text x="56"  y="73">E04</text></g>
+  <g class="est" id="e-p4-e02" onclick="clickE(this,'E02','P4')"><rect x="110" y="62" width="106" height="22" rx="2"/><text x="163" y="73">E02</text></g>
+
+  <!-- P3: texto centrado en espacio beige y=84..106 → centro=95 -->
+  <text x="111" y="95" font-family="monospace" font-size="13" font-weight="700" fill="#7a6a30" text-anchor="middle" dominant-baseline="central" pointer-events="none">P3</text>
+  <g class="est" id="e-p3-e03" onclick="clickE(this,'E03','P3')"><rect x="6"   y="106" width="100" height="22" rx="2"/><text x="56"  y="117">E03</text></g>
+  <g class="est" id="e-p3-e01" onclick="clickE(this,'E01','P3')"><rect x="110" y="106" width="106" height="22" rx="2"/><text x="163" y="117">E01</text></g>
+  <g class="est" id="e-p3-e04" onclick="clickE(this,'E04','P3')"><rect x="6"   y="130" width="100" height="22" rx="2"/><text x="56"  y="141">E04</text></g>
+  <g class="est" id="e-p3-e02" onclick="clickE(this,'E02','P3')"><rect x="110" y="130" width="106" height="22" rx="2"/><text x="163" y="141">E02</text></g>
+
+  <!-- P2: texto centrado en espacio beige y=152..176 → centro=164 -->
+  <text x="111" y="164" font-family="monospace" font-size="13" font-weight="700" fill="#7a6a30" text-anchor="middle" dominant-baseline="central" pointer-events="none">P2</text>
+  <g class="est" id="e-p2-e03" onclick="clickE(this,'E03','P2')"><rect x="6"   y="176" width="100" height="22" rx="2"/><text x="56"  y="187">E03</text></g>
+  <g class="est" id="e-p2-e01" onclick="clickE(this,'E01','P2')"><rect x="110" y="176" width="106" height="22" rx="2"/><text x="163" y="187">E01</text></g>
+  <g class="est" id="e-p2-e04" onclick="clickE(this,'E04','P2')"><rect x="6"   y="200" width="100" height="22" rx="2"/><text x="56"  y="211">E04</text></g>
+  <g class="est" id="e-p2-e02" onclick="clickE(this,'E02','P2')"><rect x="110" y="200" width="106" height="22" rx="2"/><text x="163" y="211">E02</text></g>
+
+  <!-- P1: texto centrado en espacio beige y=222..248 → centro=235 -->
+  <text x="111" y="235" font-family="monospace" font-size="13" font-weight="700" fill="#7a6a30" text-anchor="middle" dominant-baseline="central" pointer-events="none">P1</text>
+  <rect x="6"   y="248" width="96"  height="44" fill="#d0d0d0" stroke="#909090" stroke-width="1" rx="2"/>
+  <text x="54"  y="270" font-family="monospace" font-size="14" font-weight="700" fill="#444" text-anchor="middle" dominant-baseline="central" pointer-events="none">A2</text>
+  <rect x="106" y="248" width="110" height="44" fill="#e8e8d8" stroke="#b0b098" stroke-width="1" rx="2"/>
+  <text x="161" y="270" font-family="sans-serif" font-size="22" fill="#666" text-anchor="middle" dominant-baseline="central" pointer-events="none">⤢</text>
+
+  <!-- ═══ P0 CENTRAL ═══ -->
+  <rect x="222" y="66" width="482" height="184" fill="#f5f0d8" stroke="#c8b870" stroke-width="1.2" rx="2"/>
+  <text x="463" y="158" font-family="monospace" font-size="16" font-weight="700" fill="#c8a850" text-anchor="middle" dominant-baseline="central" pointer-events="none">P0</text>
+
+  <!-- ═══ ARRIBA DERECHA: E12 y E10 — pegadas a E08/E06 (x=708) ═══ -->
+  <g class="est" id="e-top-e12" onclick="clickE(this,'E12','ARR')"><rect x="488" y="22" width="110" height="42" rx="2"/><text x="543" y="43">E12</text></g>
+  <g class="est" id="e-top-e10" onclick="clickE(this,'E10','ARR')"><rect x="602" y="22" width="104" height="42" rx="2"/><text x="654" y="43">E10</text></g>
+
+  <!-- ═══ DERECHA: sep + E08 (arriba) + E06 (abajo) ═══ -->
+  <rect x="708" y="22" width="6" height="228" fill="#f0e8c0" stroke="#c8b870" stroke-width=".8"/>
+  <g class="est" id="e-der-e08" onclick="clickE(this,'E08','DER')"><rect x="716" y="22"  width="40" height="96" rx="2"/><text x="736" y="70">E08</text></g>
+  <g class="est" id="e-der-e06" onclick="clickE(this,'E06','DER')"><rect x="716" y="136" width="40" height="96" rx="2"/><text x="736" y="184">E06</text></g>
+
+  <!-- ═══ ABAJO DERECHA: E02 y E04 — pegadas a E08/E06 (x=708) ═══ -->
+  <g class="est" id="e-bot-e02" onclick="clickE(this,'E02','ABA')"><rect x="488" y="254" width="110" height="42" rx="2"/><text x="543" y="275">E02</text></g>
+  <g class="est" id="e-bot-e04" onclick="clickE(this,'E04','ABA')"><rect x="602" y="254" width="104" height="42" rx="2"/><text x="654" y="275">E04</text></g>
+
+</svg>
+  </div>
+
+</div><!-- /tabs-content -->
+
+  <!-- PANEL LATERAL COMPARTIDO -->
+  <div id="panel">
+    <div id="ph"><button id="pcl" onclick="cerrar()">✕</button><div id="pt">—</div><div id="ps">—</div></div>
+    <div id="plist"><div class="empty">Selecciona una zona<br>o estantería</div></div>
+  </div>
+
+</div>
+
+<script>
+// ── NAVEGACIÓN PESTAÑAS ──
+function showTab(id) {
+  document.querySelectorAll('.panel-wrap').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  document.querySelectorAll('.tab')[['a0','a1','a2'].indexOf(id)].classList.add('active');
+  cerrar();
+}
+
+// ── DATOS (vacíos, pendiente conectar Excel) ──
+const datos = {};
+
+// ── PANEL ──
+let sel = null;
+function clickZ(el, id) {
+  _s(el);
+  const r = datos[id] || [];
+  show(`Zona ${id}`, `Zona de suelo · ${r.length} ref.`, r);
+}
+function clickE(el, est, loc) {
+  _s(el);
+  const key = `${est}-${loc}`;
+  const r = datos[key] || [];
+  const locs = {
+    'TOP':'Fila superior', 'CEN':'Centro', 'COL':'Columna',
+    'P4':'Pasillo P4', 'P3':'Pasillo P3', 'P2':'Pasillo P2', 'P1':'Pasillo P1',
+    'ARR':'Arriba', 'DER':'Derecha', 'ABA':'Abajo',
+    'Z5-P4':'Z5 · P4','Z5-P3':'Z5 · P3','Z5-P2':'Z5 · P2','Z5-P1':'Z5 · P1',
+    'Z3-P4':'Z3 · P4','Z3-P3':'Z3 · P3','Z3-P2':'Z3 · P2','Z3-P1':'Z3 · P1',
+  };
+  show(`${est}`, locs[loc] || loc, r);
+}
+function _s(el) {
+  if (sel) sel.classList.remove('sel');
+  sel = el; el.classList.add('sel');
+}
+function show(t, s, refs) {
+  document.getElementById('pt').textContent = t;
+  document.getElementById('ps').textContent = s;
+  const l = document.getElementById('plist');
+  l.innerHTML = refs.length ? refs.map(r => {
+    const c = r.stock===0?'zero':r.stock<=2?'warn':'ok';
+    return `<div class="ri"><div class="ri-top"><span class="ri-ref">${r.ref}</span><span class="ri-stock ${c}">${r.stock} ud.</span></div><div class="ri-nom">${r.nom}</div><div class="ri-ubi">${r.ubi} · ${r.fam}</div></div>`;
+  }).join('') : '<div class="empty">Sin referencias asignadas<br><br>Ubica aquí tus referencias<br>desde AppSheet</div>';
+  document.getElementById('panel').classList.add('open');
+}
+function cerrar() {
+  document.getElementById('panel').classList.remove('open');
+  if (sel) { sel.classList.remove('sel'); sel = null; }
+}
+</script>
+</body>
+</html>
