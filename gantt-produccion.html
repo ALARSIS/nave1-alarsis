@@ -100,7 +100,7 @@
   }
 
   .btn-refresh {
-    background: var(--surface2);
+    background: #ffffff;
     border: 1px solid var(--border);
     color: var(--text);
     padding: 6px 14px;
@@ -115,33 +115,6 @@
   }
 
   .btn-refresh:hover { background: var(--accent); border-color: var(--accent); }
-
-  .btn-nav {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 13px;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  .btn-nav:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
-
-  .btn-hoy {
-    background: var(--accent);
-    border: 1px solid var(--accent);
-    color: #fff;
-    padding: 5px 12px;
-    border-radius: 4px;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  .btn-hoy:hover { opacity: 0.85; }
 
   /* CONTROLES */
   .controls {
@@ -416,7 +389,7 @@
   /* TOOLTIP */
   .tooltip {
     position: fixed;
-    background: #ffffff;
+    background: var(--surface2);
     border: 1px solid var(--border);
     border-radius: 6px;
     padding: 12px 16px;
@@ -575,10 +548,9 @@
     <input class="control-input" id="filterSearch" placeholder="cliente, máquina..." oninput="renderGantt()" style="width:180px">
   </div>
   <div class="control-group">
-    <button class="btn-nav" onclick="navMes(-1)">&#9664;</button>
-    <span id="mesActualLabel" style="min-width:140px;text-align:center;font-size:14px;font-weight:700;color:var(--text);font-family:'Rajdhani',sans-serif;letter-spacing:1px;display:inline-block"></span>
-    <button class="btn-nav" onclick="navMes(1)">&#9654;</button>
-    <button class="btn-hoy" onclick="irAHoy()">HOY</button>
+    <span class="control-label">Año</span>
+    <select class="control-select" id="filterYear" onchange="renderGantt()">
+    </select>
   </div>
 </div>
 
@@ -705,7 +677,7 @@ function getFilteredData() {
   const estado = document.getElementById('filterEstado').value;
   const serie  = document.getElementById('filterSerie').value;
   const search = document.getElementById('filterSearch').value.toLowerCase();
-  // El filtro de mes se aplica via currentYear/currentMonth
+  const year   = document.getElementById('filterYear').value;
 
   return allData.filter(row => {
     const inicio = parseDate(row.EntradaProd);
@@ -719,53 +691,35 @@ function getFilteredData() {
       const hay = (row.CLIENTE || '') + ' ' + (row.Máquina || row.Maquina || '') + ' ' + (row.KeyPedido || '');
       if (!hay.toLowerCase().includes(search)) return false;
     }
-    // Filtro por mes actual
-    const mesInicio = new Date(currentYear, currentMonth, 1);
-    const mesFin    = new Date(currentYear, currentMonth + 1, 0);
-    // Mostrar si el pedido tiene alguna fecha que cruce el mes actual
-    const iniOk = inicio && inicio <= mesFin;
-    const finOk = fin && fin >= mesInicio;
-    if (inicio || fin) {
-      if (inicio && fin) {
-        if (fin < mesInicio || inicio > mesFin) return false;
-      } else if (inicio) {
-        if (inicio > mesFin) return false;
-      } else if (fin) {
-        if (fin < mesInicio) return false;
+    if (year) {
+      const y = parseInt(year);
+      if (inicio && inicio.getFullYear() !== y && fin && fin.getFullYear() !== y) {
+        // Mostrar si el rango cruza el año
+        if (!(inicio && fin && inicio.getFullYear() <= y && fin.getFullYear() >= y)) return false;
       }
     }
     return true;
   });
 }
 
-// ─── NAVEGACIÓN POR MES ──────────────────────────────────────────────────────
-const MONTHS_ES_FULL = ['Enero','Febrero','Marzo','Abril','Mayo','Junio',
-                        'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
-let currentYear  = new Date().getFullYear();
-let currentMonth = new Date().getMonth();
-
-function updateMesLabel() {
-  document.getElementById('mesActualLabel').textContent =
-    MONTHS_ES_FULL[currentMonth] + ' ' + currentYear;
-}
-
-function navMes(delta) {
-  currentMonth += delta;
-  if (currentMonth > 11) { currentMonth = 0; currentYear++; }
-  if (currentMonth < 0)  { currentMonth = 11; currentYear--; }
-  updateMesLabel();
-  renderGantt();
-}
-
-function irAHoy() {
-  currentYear  = new Date().getFullYear();
-  currentMonth = new Date().getMonth();
-  updateMesLabel();
-  renderGantt();
-}
-
 function populateYearFilter() {
-  updateMesLabel();
+  const years = new Set();
+  allData.forEach(row => {
+    const d = parseDate(row.EntradaProd);
+    if (d) years.add(d.getFullYear());
+    const d2 = parseDate(row['Fecha Pentrega'] || row.Fecha_Pentrega);
+    if (d2) years.add(d2.getFullYear());
+  });
+  const sel = document.getElementById('filterYear');
+  const cur = sel.value;
+  sel.innerHTML = '<option value="">Todos</option>';
+  [...years].sort().forEach(y => {
+    const opt = document.createElement('option');
+    opt.value = y;
+    opt.textContent = y;
+    if (String(y) === String(cur) || (!cur && y === new Date().getFullYear())) opt.selected = true;
+    sel.appendChild(opt);
+  });
 }
 
 // ─── RENDER PRINCIPAL ────────────────────────────────────────────────────────
