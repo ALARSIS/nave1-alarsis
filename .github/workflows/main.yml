@@ -14,9 +14,8 @@ jobs:
 
       - name: Descargar gantt.json de OneDrive
         run: |
-          curl -L -o gantt_temp.json "https://alarsis0-my.sharepoint.com/:u:/g/personal/francisco_alarsis_com/IQB_u2r1Q-8uRLjrUYjPUzwnAc0Lk4LRB-uyRimUDwN4NQ8?download=1"
+          curl -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" -o gantt_temp.json "https://alarsis0-my.sharepoint.com/:u:/g/personal/francisco_alarsis_com/IQB_u2r1Q-8uRLjrUYjPUzwnAc0Lk4LRB-uyRimUDwN4NQ8?download=1"
           
-          # Verificar que es JSON válido
           if python3 -c "import json,sys; json.load(open('gantt_temp.json'))" 2>/dev/null; then
             mv gantt_temp.json gantt.json
             echo "JSON válido descargado correctamente"
