@@ -527,14 +527,11 @@
     <span class="control-label">Estado</span>
     <select class="control-select" id="filterEstado" onchange="renderGantt()">
       <option value="">Todos</option>
-      <option>Posible adelanto</option>
-      <option>Objetivo semanal</option>
-      <option>Feria</option>
-      <option>Posible retraso</option>
-      <option>Falta material</option>
-      <option>En produccion</option>
-      <option>Retrasada</option>
-      <option>Finalizada</option>
+      <option>Pendiente</option>
+      <option>Picking</option>
+      <option>Producción</option>
+      <option>Finalizado</option>
+      <option>Entregado</option>
     </select>
   </div>
   <div class="control-group">
@@ -558,14 +555,11 @@
 
 <!-- LEYENDA -->
 <div class="legend">
-  <div class="legend-item"><div class="legend-dot" style="background:var(--c-adelanto)"></div>Posible adelanto</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--c-objetivo)"></div>Objetivo semanal</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--c-feria)"></div>Feria</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--c-retraso)"></div>Posible retraso</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--c-material)"></div>Falta material</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--c-produccion)"></div>En produccion</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--c-retrasada)"></div>Retrasada</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--c-finalizada)"></div>Finalizada</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#4b5563"></div>Pendiente</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#fff2cc"></div>Picking</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ffff00"></div>Producción</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#92d050"></div>Finalizado</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#00b050"></div>Entregado</div>
 </div>
 
 <!-- STATS -->
@@ -590,14 +584,11 @@ const JSON_URL = 'https://raw.githubusercontent.com/ALARSIS/nave1-alarsis/main/g
 
 // ─── COLORES ──────────────────────────────────────────────────────────────────
 const ESTADO_COLORS = {
-  'Posible adelanto':  '#ff9b9b',
-  'Objetivo semanal':  '#ccff33',
-  'Feria':             '#fca9dd',
-  'Posible retraso':   '#ffc000',
-  'Falta material':    '#ff0000',
-  'En produccion':     '#ffff00',
-  'Retrasada':         '#d28df0',
-  'Finalizada':        '#92d050',
+  'Pendiente':   '#4b5563',
+  'Picking':     '#fff2cc',
+  'Producción':  '#ffff00',
+  'Finalizado':  '#92d050',
+  'Entregado':   '#00b050',
 };
 
 // ─── ESTADO ──────────────────────────────────────────────────────────────────
@@ -926,16 +917,17 @@ function hideTooltip() {
 // ─── STATS ───────────────────────────────────────────────────────────────────
 function updateStats(data) {
   const total = data.length;
-  const enProd = data.filter(r => r['Estado MQ'] === 'En produccion').length;
-  const pendientes = data.filter(r => ['Pendiente','Objetivo semanal','Posible adelanto'].includes(r['Estado MQ'])).length;
-  const finalizadas = data.filter(r => r['Estado MQ'] === 'Finalizada').length;
-  const retrasadas = data.filter(r => ['Retrasada','Posible retraso'].includes(r['Estado MQ'])).length;
+  const enProd = data.filter(r => r['Estado MQ'] === 'Producción').length;
+  const finalizadas = data.filter(r => r['Estado MQ'] === 'Finalizado').length;
+  const entregadas = data.filter(r => r['Estado MQ'] === 'Entregado').length;
+  const picking = data.filter(r => r['Estado MQ'] === 'Picking').length;
 
   document.getElementById('statsBar').innerHTML = `
     <div class="stat"><span>Total:</span><span class="stat-val">${total}</span></div>
-    <div class="stat"><span>En producción:</span><span class="stat-val" style="color:var(--c-produccion)">${enProd}</span></div>
-    <div class="stat"><span>Finalizadas:</span><span class="stat-val" style="color:var(--c-finalizada)">${finalizadas}</span></div>
-    <div class="stat"><span>Retrasadas:</span><span class="stat-val" style="color:var(--c-retrasada)">${retrasadas}</span></div>
+    <div class="stat"><span>En producción:</span><span class="stat-val" style="color:#ffff00">${enProd}</span></div>
+    <div class="stat"><span>Finalizadas:</span><span class="stat-val" style="color:#92d050">${finalizadas}</span></div>
+    <div class="stat"><span>Entregadas:</span><span class="stat-val" style="color:#00b050">${entregadas}</span></div>
+    <div class="stat"><span>Picking:</span><span class="stat-val" style="color:#fff2cc">${picking}</span></div>
   `;
 }
 
