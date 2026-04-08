@@ -523,18 +523,7 @@
 
 <!-- CONTROLES -->
 <div class="controls">
-  <div class="control-group">
-    <span class="control-label">Estado</span>
-    <select class="control-select" id="filterEstado" onchange="renderGantt()">
-      <option value="">Todos</option>
-      <option value="__activos__" selected>Activos (Pend+Pick+Prod)</option>
-      <option>Pendiente</option>
-      <option>Picking</option>
-      <option>Producción</option>
-      <option>Finalizado</option>
-      <option>Entregado</option>
-    </select>
-  </div>
+
   <div class="control-group">
     <span class="control-label">Serie</span>
     <select class="control-select" id="filterSerie" onchange="renderGantt()">
@@ -556,10 +545,9 @@
 
 <!-- LEYENDA -->
 <div class="legend">
-  <div class="legend-item"><div class="legend-dot" style="background:#4b5563"></div>Pendiente</div>
-  <div class="legend-item"><div class="legend-dot" style="background:#fff2cc"></div>Picking</div>
-  <div class="legend-item"><div class="legend-dot" style="background:#ffff00"></div>Producción</div>
-  <div class="legend-item"><div class="legend-dot" style="background:#92d050"></div>Finalizado</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#4b5563"></div>Sin fecha entrega</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ffff00"></div>Fecha entrega asignada</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#92d050"></div>Fabricación finalizada</div>
   <div class="legend-item"><div class="legend-dot" style="background:#00b050"></div>Entregado</div>
 </div>
 
@@ -674,7 +662,7 @@ async function loadData() {
 
 // ─── FILTROS ──────────────────────────────────────────────────────────────────
 function getFilteredData() {
-  const estado = document.getElementById('filterEstado').value;
+
   const serie  = document.getElementById('filterSerie').value;
   const search = document.getElementById('filterSearch').value.toLowerCase();
   const year   = document.getElementById('filterYear').value;
@@ -683,9 +671,7 @@ function getFilteredData() {
     const inicio = parseDate(row.EntradaProd);
     const fin    = parseDate(row.ModFecha_Pentrega || row['ModFecha Pentrega'] || row.Fecha_Pentrega || row['Fecha Pentrega']);
 
-    if (estado === '__activos__') {
-      if (!['Pendiente','Picking','Producción'].includes(row['Estado MQ'])) return false;
-    } else if (estado && row['Estado MQ'] !== estado) return false;
+
     if (serie && !row.KeyPedido?.startsWith(serie)) return false;
     if (search) {
       const hay = (row.CLIENTE || '') + ' ' + (row.Máquina || row.Maquina || '') + ' ' + (row.KeyPedido || '');
@@ -698,6 +684,8 @@ function getFilteredData() {
         if (!(inicio && fin && inicio.getFullYear() <= y && fin.getFullYear() >= y)) return false;
       }
     }
+    // Solo mostrar si tiene EntradaProd rellena
+    if (!inicio) return false;
     return true;
   });
 }
@@ -803,21 +791,19 @@ function renderGantt() {
       const maquina = row.Máquina || row.Maquina || '—';
       const cliente = row.CLIENTE || '—';
       const key     = row.KeyPedido || '—';
-      const estado     = row['Estado MQ'] || '';
       const fechaSalida = row['Fecha salida MQ'] || row.Fecha_salida_MQ;
       const fechaFinFab = row['Fecha fin Fab']   || row.Fecha_fin_Fab;
+      const fechaPent   = row['ModFecha Pentrega'] || row.ModFecha_Pentrega || row['Fecha Pentrega'] || row.Fecha_Pentrega;
 
       let color;
       if (fechaSalida) {
-        color = '#00b050'; // Verde oscuro — Entregado
+        color = '#00b050'; // Verde oscuro — Fecha salida MQ rellena
       } else if (fechaFinFab) {
-        color = '#92d050'; // Verde claro — Finalizado
-      } else if (estado === 'Producción') {
-        color = '#ffff00'; // Amarillo fuerte — En producción
-      } else if (estado === 'Picking') {
-        color = '#fff2cc'; // Amarillo claro — Picking
+        color = '#92d050'; // Verde claro — Fecha fin Fab rellena
+      } else if (fechaPent) {
+        color = '#ffff00'; // Amarillo — Fecha Pentrega o ModFecha Pentrega rellena
       } else {
-        color = '#4b5563'; // Gris — Pendiente
+        color = '#4b5563'; // Gris — Solo EntradaProd rellena
       }
       const textColor = needsDarkText(color) ? '#000' : '#fff';
 
@@ -933,18 +919,18 @@ function hideTooltip() {
 
 // ─── STATS ───────────────────────────────────────────────────────────────────
 function updateStats(data) {
-  const total = data.length;
-  const enProd = data.filter(r => r['Estado MQ'] === 'Producción').length;
-  const finalizadas = data.filter(r => r['Estado MQ'] === 'Finalizado').length;
-  const entregadas = data.filter(r => r['Estado MQ'] === 'Entregado').length;
-  const picking = data.filter(r => r['Estado MQ'] === 'Picking').length;
+  const total      = data.length;
+  const entregadas = data.filter(r => r['Fecha salida MQ'] || r.Fecha_salida_MQ).length;
+  const finalizadas = data.filter(r => (r['Fecha fin Fab'] || r.Fecha_fin_Fab) && !(r['Fecha salida MQ'] || r.Fecha_salida_MQ)).length;
+  const conFecha   = data.filter(r => (r['ModFecha Pentrega'] || r.ModFecha_Pentrega || r['Fecha Pentrega'] || r.Fecha_Pentrega) && !(r['Fecha fin Fab'] || r.Fecha_fin_Fab) && !(r['Fecha salida MQ'] || r.Fecha_salida_MQ)).length;
+  const sinFecha   = data.filter(r => !(r['ModFecha Pentrega'] || r.ModFecha_Pentrega || r['Fecha Pentrega'] || r.Fecha_Pentrega) && !(r['Fecha fin Fab'] || r.Fecha_fin_Fab) && !(r['Fecha salida MQ'] || r.Fecha_salida_MQ)).length;
 
   document.getElementById('statsBar').innerHTML = `
     <div class="stat"><span>Total:</span><span class="stat-val">${total}</span></div>
-    <div class="stat"><span>En producción:</span><span class="stat-val" style="color:#ffff00">${enProd}</span></div>
+    <div class="stat"><span>Con fecha entrega:</span><span class="stat-val" style="color:#b8860b">${conFecha}</span></div>
     <div class="stat"><span>Finalizadas:</span><span class="stat-val" style="color:#92d050">${finalizadas}</span></div>
     <div class="stat"><span>Entregadas:</span><span class="stat-val" style="color:#00b050">${entregadas}</span></div>
-    <div class="stat"><span>Picking:</span><span class="stat-val" style="color:#fff2cc">${picking}</span></div>
+    <div class="stat"><span>Sin fecha:</span><span class="stat-val" style="color:#4b5563">${sinFecha}</span></div>
   `;
 }
 
