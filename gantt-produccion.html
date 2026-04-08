@@ -661,7 +661,7 @@ async function loadData() {
   document.getElementById('lastUpdate').textContent = 'Actualizando...';
 
   try {
-    const res = await fetch(JSON_URL + '&t=' + Date.now());
+    const res = await fetch(JSON_URL + '?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const raw = await res.json();
 
