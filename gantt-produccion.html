@@ -803,8 +803,22 @@ function renderGantt() {
       const maquina = row.Máquina || row.Maquina || '—';
       const cliente = row.CLIENTE || '—';
       const key     = row.KeyPedido || '—';
-      const estado  = row['Estado MQ'] || '';
-      const color   = ESTADO_COLORS[estado] || '#4b5563';
+      const estado     = row['Estado MQ'] || '';
+      const fechaSalida = row['Fecha salida MQ'] || row.Fecha_salida_MQ;
+      const fechaFinFab = row['Fecha fin Fab']   || row.Fecha_fin_Fab;
+
+      let color;
+      if (fechaSalida) {
+        color = '#00b050'; // Verde oscuro — Entregado
+      } else if (fechaFinFab) {
+        color = '#92d050'; // Verde claro — Finalizado
+      } else if (estado === 'Producción') {
+        color = '#ffff00'; // Amarillo fuerte — En producción
+      } else if (estado === 'Picking') {
+        color = '#fff2cc'; // Amarillo claro — Picking
+      } else {
+        color = '#4b5563'; // Gris — Pendiente
+      }
       const textColor = needsDarkText(color) ? '#000' : '#fff';
 
       const ini = parseDate(row.EntradaProd);
