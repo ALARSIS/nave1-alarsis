@@ -209,7 +209,9 @@
   .row-client  { font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
   /* AREA DEL GANTT */
-  .gantt-row-bars { position: relative; display: flex; flex: 1; }
+  .gantt-row-bars { position: relative; display: flex; flex: 1; min-width: 0; }
+
+  .day-bg-filler { flex: 1; height: 100%; background: transparent; }
 
   .day-bg {
     width: var(--day-w); height: 100%;
@@ -605,6 +607,8 @@ function renderGantt() {
       ${nw && !td ? `<span class="day-festivo" title="${nwNombre}">${nwNombre}</span>` : ''}
     </div>`;
   });
+  // Celda expansora cabecera
+  html += `<div class="day-cell" style="flex:1;border-right:none"></div>`;
   html += '</div></div></div></div>';
 
   // ── Body ──
@@ -682,6 +686,8 @@ function renderGantt() {
         const td = isToday(d);
         html += `<div class="day-bg ${td?'today':(nw?'nonworking':'')}"></div>`;
       });
+      // Celda expansora para llenar el ancho restante
+      html += `<div class="day-bg-filler"></div>`;
 
       // Línea de hoy
       if (todayLeft >= 0) {
