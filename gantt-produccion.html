@@ -18,7 +18,7 @@
     --header-h: 56px;
     --row-h: 44px;
     --label-w: 320px;
-    --day-w: 36px;
+    --day-w: 36px; /* sobreescrito por JS en tiempo de render */
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -132,8 +132,8 @@
   .legend-dot  { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; }
 
   /* GANTT CONTAINER */
-  .gantt-wrapper { overflow-y: auto; overflow-x: hidden; max-height: calc(100vh - 200px); width: 100%; }
-  .gantt-container { width: 100%; position: relative; }
+  .gantt-wrapper { overflow: auto; max-height: calc(100vh - 200px); width: 100%; }
+  .gantt-container { width: 100%; position: relative; min-width: 0; }
 
   /* CABECERA GANTT */
   .gantt-header {
@@ -566,7 +566,18 @@ function getFilteredData() {
 }
 
 // ─── RENDER PRINCIPAL ────────────────────────────────────────────────────────
+function calcDayWidth() {
+  // Ancho disponible = ventana - columna label (320px) - scrollbar estimado (16px) - bordes (2px)
+  const available = window.innerWidth - 320 - 18;
+  // Dividir entre 5 días, mínimo 36px por día
+  return Math.max(36, Math.floor(available / 5));
+}
+
 function renderGantt() {
+  // Calcular ancho dinámico de cada día y aplicar como variable CSS
+  const DAY_W = calcDayWidth();
+  document.documentElement.style.setProperty('--day-w', DAY_W + 'px');
+
   // Días de la semana: lun a vie
   const weekDays = [];
   for (let i = 0; i < 5; i++) weekDays.push(addDays(currentWeekMonday, i));
@@ -587,7 +598,7 @@ function renderGantt() {
   let html = '<div class="gantt-container">';
 
   // ── Cabecera ──
-  const weekWidthPx = weekDays.length * 36;
+  const weekWidthPx = weekDays.length * DAY_W;
   html += '<div class="gantt-header">';
   html += `<div class="gantt-label-header">MÁQUINA / PEDIDO</div>`;
   html += '<div class="gantt-days-header">';
@@ -623,7 +634,7 @@ function renderGantt() {
   } else {
     // Índice de hoy dentro de los días visibles
     const todayIdx = weekDays.findIndex(d => isToday(d));
-    const todayLeft = todayIdx >= 0 ? todayIdx * 36 : -1;
+    const todayLeft = todayIdx >= 0 ? todayIdx * DAY_W : -1;
 
     data.forEach(row => {
       const maquina    = row.Máquina || row.Maquina || '—';
@@ -662,8 +673,8 @@ function renderGantt() {
         if (endIdx >= 0 && startIdx <= 4) {
           const s = Math.max(0, startIdx);
           const e = Math.min(4, endIdx);
-          barLeft  = s * 36;
-          barWidth = Math.max(36, (e - s + 1) * 36);
+          barLeft  = s * DAY_W;
+          barWidth = Math.max(DAY_W, (e - s + 1) * DAY_W);
           hasBar = true;
         }
       }
@@ -778,6 +789,13 @@ function needsDarkText(hex) {
 function showDetail(key) { /* reservado */ }
 
 // ─── INIT ─────────────────────────────────────────────────────────────────────
+// Redibujar al cambiar tamaño de ventana
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => renderGantt(), 150);
+});
+
 loadData();
 </script>
 </body>
