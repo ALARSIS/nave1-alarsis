@@ -893,7 +893,7 @@ function showTooltip(e, dataStr) {
     <div class="tooltip-row"><span>F. entrega orig.</span><span>${d.finOrig}</span></div>
     ${d.finMod && d.finMod !== '—' ? `<div class="tooltip-row"><span>F. entrega mod.</span><span style="color:#ffc000">${d.finMod}</span></div>` : ''}
     ${d.fechaSalida && d.fechaSalida !== '—' ? `<div class="tooltip-row"><span>Salida almacén</span><span>${d.fechaSalida}</span></div>` : ''}
-    <div><span class="tooltip-estado" style="background:${color}">${d.estado || 'Sin estado'}</span></div>
+
   `;
   tt.classList.add('visible');
   moveTooltip(e);
