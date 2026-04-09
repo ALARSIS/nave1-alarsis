@@ -132,13 +132,14 @@
   .legend-dot  { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; }
 
   /* GANTT CONTAINER */
-  .gantt-wrapper { overflow: auto; max-height: calc(100vh - 200px); }
-  .gantt-container { min-width: max-content; position: relative; }
+  .gantt-wrapper { overflow-y: auto; overflow-x: hidden; max-height: calc(100vh - 200px); width: 100%; }
+  .gantt-container { width: 100%; position: relative; }
 
   /* CABECERA GANTT */
   .gantt-header {
     display: flex; position: sticky; top: 0; z-index: 50;
     background: var(--surface); border-bottom: 2px solid var(--border);
+    width: 100%;
   }
 
   .gantt-label-header {
@@ -150,10 +151,10 @@
     position: sticky; left: 0; background: var(--surface); z-index: 60;
   }
 
-  .gantt-days-header { display: flex; }
+  .gantt-days-header { display: flex; flex: 1; }
 
   /* Cabecera semana: una sola fila con etiqueta + días */
-  .week-header-block { display: flex; flex-direction: column; }
+  .week-header-block { display: flex; flex-direction: column; flex: 1; }
 
   .week-header-label {
     height: 22px; display: flex; align-items: center; justify-content: center;
@@ -166,7 +167,7 @@
   .whl-month { font-size: 12px; font-weight: 700; letter-spacing: 2px; color: var(--accent); font-family: 'JetBrains Mono', monospace; text-transform: uppercase; }
   .whl-week  { font-size: 10px; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; }
 
-  .days-row { display: flex; }
+  .days-row { display: flex; flex: 1; }
 
   .day-cell {
     width: var(--day-w); height: 34px;
