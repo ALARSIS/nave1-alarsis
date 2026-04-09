@@ -19,17 +19,6 @@
     --row-h: 44px;
     --label-w: 320px;
     --day-w: 36px;
-
-    /* Estados ALARSIS */
-    --c-adelanto:   #ff9b9b;
-    --c-objetivo:   #ccff33;
-    --c-feria:      #fca9dd;
-    --c-retraso:    #ffc000;
-    --c-material:   #ff0000;
-    --c-produccion: #ffff00;
-    --c-retrasada:  #d28df0;
-    --c-finalizada: #92d050;
-    --c-sin-estado: #4b5563;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -56,451 +45,232 @@
     z-index: 100;
   }
 
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
+  .logo { display: flex; align-items: center; gap: 12px; }
 
   .logo-mark {
-    width: 32px;
-    height: 32px;
+    width: 32px; height: 32px;
     background: var(--accent);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
-  .logo-text {
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-  }
+  .logo-text { font-size: 18px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; }
+  .logo-sub  { font-size: 11px; color: var(--text-muted); letter-spacing: 2px; text-transform: uppercase; font-family: 'JetBrains Mono', monospace; }
 
-  .logo-sub {
-    font-size: 11px;
-    color: var(--text-muted);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-family: 'JetBrains Mono', monospace;
-  }
+  .header-right { display: flex; align-items: center; gap: 16px; }
 
-  .header-right {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-
-  .last-update {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--text-muted);
-  }
+  .last-update { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-muted); }
 
   .btn-refresh {
-    background: #ffffff;
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 6px 14px;
-    border-radius: 4px;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-transform: uppercase;
+    background: #ffffff; border: 1px solid var(--border); color: var(--text);
+    padding: 6px 14px; border-radius: 4px; font-family: 'Rajdhani', sans-serif;
+    font-size: 13px; font-weight: 600; letter-spacing: 1px; cursor: pointer;
+    transition: all 0.2s; text-transform: uppercase;
   }
-
-  .btn-refresh:hover { background: var(--accent); border-color: var(--accent); }
+  .btn-refresh:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 
   /* CONTROLES */
   .controls {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 12px 24px;
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    flex-wrap: wrap;
+    display: flex; align-items: center; gap: 16px;
+    padding: 12px 24px; background: var(--surface);
+    border-bottom: 1px solid var(--border); flex-wrap: wrap;
   }
 
-  .control-group {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+  .control-group { display: flex; align-items: center; gap: 8px; }
 
-  .control-label {
-    font-size: 11px;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
+  .control-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; }
 
   .control-select, .control-input {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 13px;
-    outline: none;
+    background: var(--surface2); border: 1px solid var(--border); color: var(--text);
+    padding: 5px 10px; border-radius: 4px; font-family: 'Rajdhani', sans-serif;
+    font-size: 13px; outline: none;
+  }
+  .control-select:focus, .control-input:focus { border-color: var(--accent); }
+
+  /* NAVEGACIÓN SEMANAL */
+  .week-nav {
+    display: flex; align-items: center; gap: 0;
+    margin-left: auto;
   }
 
-  .control-select:focus, .control-input:focus {
-    border-color: var(--accent);
+  .btn-week {
+    background: var(--surface2); border: 1px solid var(--border); color: var(--text);
+    width: 32px; height: 32px; border-radius: 4px; font-size: 16px;
+    cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center;
+    font-weight: 700;
   }
+  .btn-week:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .week-label {
+    display: flex; flex-direction: column; align-items: center;
+    padding: 0 16px; min-width: 160px;
+  }
+  .week-label-month {
+    font-size: 16px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--accent);
+    font-family: 'JetBrains Mono', monospace; line-height: 1.2;
+  }
+  .week-label-num {
+    font-size: 11px; color: var(--text-muted); letter-spacing: 1px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .btn-today {
+    background: var(--accent); border: 1px solid var(--accent); color: #fff;
+    padding: 4px 12px; border-radius: 4px; font-family: 'Rajdhani', sans-serif;
+    font-size: 12px; font-weight: 600; letter-spacing: 1px; cursor: pointer;
+    transition: all 0.2s; text-transform: uppercase; margin-left: 8px;
+  }
+  .btn-today:hover { background: #2563eb; border-color: #2563eb; }
 
   /* LEYENDA */
   .legend {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 8px 24px;
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    flex-wrap: wrap;
+    display: flex; align-items: center; gap: 12px;
+    padding: 8px 24px; background: var(--surface);
+    border-bottom: 1px solid var(--border); flex-wrap: wrap;
   }
-
-  .legend-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 12px;
-    color: var(--text-muted);
-  }
-
-  .legend-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 2px;
-    flex-shrink: 0;
-  }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
+  .legend-dot  { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; }
 
   /* GANTT CONTAINER */
-  .gantt-wrapper {
-    overflow: auto;
-    max-height: calc(100vh - 180px);
-  }
-
-  .gantt-container {
-    min-width: max-content;
-    position: relative;
-  }
+  .gantt-wrapper { overflow: auto; max-height: calc(100vh - 200px); }
+  .gantt-container { min-width: max-content; position: relative; }
 
   /* CABECERA GANTT */
   .gantt-header {
-    display: flex;
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: var(--surface);
-    border-bottom: 2px solid var(--border);
+    display: flex; position: sticky; top: 0; z-index: 50;
+    background: var(--surface); border-bottom: 2px solid var(--border);
   }
 
   .gantt-label-header {
-    width: var(--label-w);
-    min-width: var(--label-w);
-    padding: 0 16px;
-    display: flex;
-    align-items: center;
-    height: var(--header-h);
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--text-muted);
+    width: var(--label-w); min-width: var(--label-w);
+    padding: 0 16px; display: flex; align-items: center;
+    height: var(--header-h); font-size: 11px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted);
     border-right: 1px solid var(--border);
-    position: sticky;
-    left: 0;
-    background: var(--surface);
-    z-index: 60;
+    position: sticky; left: 0; background: var(--surface); z-index: 60;
   }
 
-  .gantt-days-header {
-    display: flex;
-  }
+  .gantt-days-header { display: flex; }
 
-  .month-group {
-    display: flex;
-    flex-direction: column;
-  }
+  /* Cabecera semana: una sola fila con etiqueta + días */
+  .week-header-block { display: flex; flex-direction: column; }
 
-  .month-label {
-    height: 22px;
-    display: flex;
-    align-items: center;
-    padding: 0 8px;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--accent);
+  .week-header-label {
+    height: 22px; display: flex; align-items: center; justify-content: center;
+    gap: 8px; padding: 0 8px;
+    background: rgba(59,130,246,0.08);
     border-bottom: 1px solid var(--border);
-    font-family: 'JetBrains Mono', monospace;
+    border-left: 2px solid var(--accent);
+    border-right: 2px solid var(--accent);
   }
+  .whl-month { font-size: 12px; font-weight: 700; letter-spacing: 2px; color: var(--accent); font-family: 'JetBrains Mono', monospace; text-transform: uppercase; }
+  .whl-week  { font-size: 10px; color: var(--text-muted); font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; }
 
-  .days-row {
-    display: flex;
-  }
+  .days-row { display: flex; }
 
   .day-cell {
-    width: var(--day-w);
-    height: 34px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    font-family: 'JetBrains Mono', monospace;
-    color: var(--text-muted);
-    border-right: 1px solid var(--border);
-    flex-shrink: 0;
+    width: var(--day-w); height: 34px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-size: 10px; font-family: 'JetBrains Mono', monospace;
+    color: var(--text-muted); border-right: 1px solid var(--border); flex-shrink: 0;
   }
 
-  .day-cell.weekend {
-    background: rgba(0,0,0,0.03);
-  }
+  .day-cell.nonworking { background: #92d050; color: #1a3a0a; font-weight: 700; }
+  .day-cell.today      { background: rgba(59,130,246,0.15); color: var(--accent); font-weight: 700; border-left: 2px solid var(--accent); border-right: 2px solid var(--accent); }
 
-  .day-cell.today {
-    background: rgba(59,130,246,0.15);
-    color: var(--accent);
-    font-weight: 700;
-  }
-
-  .day-num { font-size: 11px; font-weight: 600; }
+  .day-num  { font-size: 11px; font-weight: 600; }
   .day-name { font-size: 9px; opacity: 0.6; }
 
-  /* FILAS */
-  .gantt-body { }
-
-  .gantt-row {
-    display: flex;
-    height: var(--row-h);
-    border-bottom: 1px solid var(--border);
-    position: relative;
+  /* Etiqueta festivo en cabecera */
+  .day-cell.nonworking .day-festivo {
+    font-size: 7px; line-height: 1; text-align: center;
+    max-width: 34px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+    color: #1a3a0a; font-family: 'Rajdhani', sans-serif; font-weight: 600;
   }
 
+  /* FILAS */
+  .gantt-row {
+    display: flex; height: var(--row-h);
+    border-bottom: 1px solid var(--border); position: relative;
+  }
   .gantt-row:hover { background: rgba(0,0,0,0.02); }
 
   .gantt-row-label {
-    width: var(--label-w);
-    min-width: var(--label-w);
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-    gap: 10px;
+    width: var(--label-w); min-width: var(--label-w);
+    display: flex; align-items: center; padding: 0 16px; gap: 10px;
     border-right: 1px solid var(--border);
-    position: sticky;
-    left: 0;
-    background: var(--surface);
-    z-index: 10;
-    cursor: pointer;
+    position: sticky; left: 0; background: var(--surface); z-index: 10; cursor: pointer;
   }
-
   .gantt-row:hover .gantt-row-label { background: var(--surface2); }
 
-  .row-key {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--accent);
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-
+  .row-key { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--accent); white-space: nowrap; flex-shrink: 0; }
   .row-info { overflow: hidden; }
-
-  .row-machine {
-    font-size: 13px;
-    font-weight: 600;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .row-client {
-    font-size: 11px;
-    color: var(--text-muted);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  .row-machine { font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .row-client  { font-size: 11px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
   /* AREA DEL GANTT */
-  .gantt-row-bars {
-    position: relative;
-    display: flex;
-    flex: 1;
-  }
+  .gantt-row-bars { position: relative; display: flex; flex: 1; }
 
   .day-bg {
-    width: var(--day-w);
-    height: 100%;
-    border-right: 1px solid rgba(42,47,63,0.5);
-    flex-shrink: 0;
+    width: var(--day-w); height: 100%;
+    border-right: 1px solid rgba(42,47,63,0.5); flex-shrink: 0;
   }
-
-  .day-bg.weekend { background: rgba(0,0,0,0.02); }
-  .day-bg.today { background: rgba(59,130,246,0.08); }
+  .day-bg.nonworking { background: rgba(146,208,80,0.15); }
+  .day-bg.today      { background: rgba(59,130,246,0.08); border-left: 2px solid rgba(59,130,246,0.3); border-right: 2px solid rgba(59,130,246,0.3); }
 
   /* BARRA */
   .gantt-bar {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 28px;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    padding: 0 8px;
-    font-size: 11px;
-    font-weight: 600;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    cursor: pointer;
-    transition: filter 0.2s, box-shadow 0.2s;
-    z-index: 5;
-    color: #000;
+    position: absolute; top: 50%; transform: translateY(-50%);
+    height: 28px; border-radius: 3px;
+    display: flex; align-items: center; padding: 0 8px;
+    font-size: 11px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    cursor: pointer; transition: filter 0.2s, box-shadow 0.2s; z-index: 5;
     box-shadow: 0 1px 4px rgba(0,0,0,0.4);
   }
-
-  .gantt-bar:hover {
-    filter: brightness(1.15);
-    box-shadow: 0 2px 12px rgba(0,0,0,0.6);
-    z-index: 20;
-  }
+  .gantt-bar:hover { filter: brightness(1.15); box-shadow: 0 2px 12px rgba(0,0,0,0.6); z-index: 20; }
 
   /* Línea de hoy */
   .today-line {
-    position: absolute;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background: var(--accent);
-    z-index: 15;
-    pointer-events: none;
+    position: absolute; top: 0; width: 2px; height: 100%;
+    background: var(--accent); z-index: 15; pointer-events: none;
   }
 
   /* TOOLTIP */
   .tooltip {
-    position: fixed;
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 12px 16px;
-    font-size: 12px;
-    z-index: 1000;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.15s;
-    min-width: 240px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    position: fixed; background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 6px; padding: 12px 16px; font-size: 12px; z-index: 1000;
+    pointer-events: none; opacity: 0; transition: opacity 0.15s;
+    min-width: 240px; box-shadow: 0 8px 32px rgba(0,0,0,0.15);
   }
-
   .tooltip.visible { opacity: 1; }
-
-  .tooltip-title {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 8px;
-    color: var(--text);
-  }
-
-  .tooltip-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    margin-bottom: 4px;
-    color: var(--text-muted);
-  }
-
-  .tooltip-row span:last-child {
-    color: var(--text);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-  }
-
-  .tooltip-estado {
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 3px;
-    font-size: 11px;
-    font-weight: 700;
-    margin-top: 6px;
-    color: #000;
-  }
+  .tooltip-title { font-size: 14px; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+  .tooltip-row { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 4px; color: var(--text-muted); }
+  .tooltip-row span:last-child { color: var(--text); font-family: 'JetBrains Mono', monospace; font-size: 11px; }
 
   /* LOADING */
-  .loading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-    gap: 16px;
-    color: var(--text-muted);
-  }
-
-  .spinner {
-    width: 40px;
-    height: 40px;
-    border: 3px solid var(--border);
-    border-top-color: var(--accent);
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-  }
-
+  .loading { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 300px; gap: 16px; color: var(--text-muted); }
+  .spinner { width: 40px; height: 40px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
-
-  .loading-text {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
+  .loading-text { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; }
 
   /* ERROR */
-  .error-msg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    color: #ff6b6b;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
-    text-align: center;
-    padding: 24px;
-  }
+  .error-msg { display: flex; align-items: center; justify-content: center; height: 200px; color: #ff6b6b; font-family: 'JetBrains Mono', monospace; font-size: 13px; text-align: center; padding: 24px; }
 
   /* STATS BAR */
-  .stats-bar {
-    display: flex;
-    gap: 24px;
-    padding: 8px 24px;
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--text-muted);
-  }
-
+  .stats-bar { display: flex; gap: 24px; padding: 8px 24px; background: var(--surface); border-bottom: 1px solid var(--border); font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-muted); }
   .stat { display: flex; gap: 6px; }
   .stat-val { color: var(--text); font-weight: 600; }
 
-  /* EMPTY ROW */
-  .gantt-empty {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    color: var(--text-muted);
-    font-size: 13px;
-    font-family: 'JetBrains Mono', monospace;
+  /* EMPTY */
+  .gantt-empty { display: flex; align-items: center; justify-content: center; height: 100px; color: var(--text-muted); font-size: 13px; font-family: 'JetBrains Mono', monospace; }
+
+  /* VACACIONES BANNER */
+  .vacaciones-banner {
+    display: flex; align-items: center; justify-content: center;
+    height: 60px; background: #92d050; color: #1a3a0a;
+    font-size: 20px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+    font-family: 'Rajdhani', sans-serif;
+    border-bottom: 2px solid #6ab032;
   }
 </style>
 </head>
@@ -523,7 +293,6 @@
 
 <!-- CONTROLES -->
 <div class="controls">
-
   <div class="control-group">
     <span class="control-label">Serie</span>
     <select class="control-select" id="filterSerie" onchange="renderGantt()">
@@ -538,17 +307,29 @@
   </div>
   <div class="control-group">
     <span class="control-label">Año</span>
-    <select class="control-select" id="filterYear" onchange="renderGantt()">
+    <select class="control-select" id="filterYear" onchange="onYearChange()">
     </select>
+  </div>
+
+  <!-- NAVEGACIÓN SEMANAL -->
+  <div class="week-nav">
+    <button class="btn-week" onclick="changeWeek(-1)" title="Semana anterior">&#8249;</button>
+    <div class="week-label">
+      <div class="week-label-month" id="navMonth">—</div>
+      <div class="week-label-num"  id="navWeek">—</div>
+    </div>
+    <button class="btn-week" onclick="changeWeek(1)" title="Semana siguiente">&#8250;</button>
+    <button class="btn-today" onclick="goToToday()">Hoy</button>
   </div>
 </div>
 
 <!-- LEYENDA -->
 <div class="legend">
   <div class="legend-item"><div class="legend-dot" style="background:#4b5563"></div>Sin fecha entrega</div>
-  <div class="legend-item"><div class="legend-dot" style="background:#ffff00"></div>Fecha entrega asignada</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ffff00;border:1px solid #ccc"></div>Fecha entrega asignada</div>
   <div class="legend-item"><div class="legend-dot" style="background:#92d050"></div>Fabricación finalizada</div>
   <div class="legend-item"><div class="legend-dot" style="background:#00b050"></div>Entregado</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#92d050;border:1px solid #6ab032"></div>Festivo / Vacaciones</div>
 </div>
 
 <!-- STATS -->
@@ -569,33 +350,26 @@
 
 <script>
 // ─── CONFIG ───────────────────────────────────────────────────────────────────
-const JSON_URL = 'https://raw.githubusercontent.com/ALARSIS/nave1-alarsis/main/gantt.json';
-
-// ─── COLORES ──────────────────────────────────────────────────────────────────
-const ESTADO_COLORS = {
-  'Pendiente':   '#4b5563',
-  'Picking':     '#fff2cc',
-  'Producción':  '#ffff00',
-  'Finalizado':  '#92d050',
-  'Entregado':   '#00b050',
-};
+const JSON_URL     = 'https://raw.githubusercontent.com/ALARSIS/nave1-alarsis/main/gantt.json';
+const FESTIVOS_URL = 'https://raw.githubusercontent.com/ALARSIS/nave1-alarsis/main/festivos.json';
 
 // ─── ESTADO ──────────────────────────────────────────────────────────────────
-let allData = [];
-let ganttStart = null;
-let ganttEnd = null;
-let allDays = [];
+let allData        = [];
+let nonWorkingMap  = {};   // dateKey -> nombre
+let currentWeekMonday = getThisWeekMonday();
 
-// ─── UTILIDADES DE FECHA ──────────────────────────────────────────────────────
+// ─── MESES ES ─────────────────────────────────────────────────────────────────
+const MONTHS_ES     = ['ENERO','FEBRERO','MARZO','ABRIL','MAYO','JUNIO','JULIO','AGOSTO','SEPTIEMBRE','OCTUBRE','NOVIEMBRE','DICIEMBRE'];
+const MONTHS_ES_ABR = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
+const DAY_NAMES     = ['D','L','M','X','J','V','S'];
+
+// ─── UTILIDADES FECHA ─────────────────────────────────────────────────────────
 function parseDate(val) {
   if (!val) return null;
-  // Formato Excel serial o string
   if (typeof val === 'number') {
-    // Excel date serial
     const d = new Date((val - 25569) * 86400 * 1000);
     return isNaN(d) ? null : d;
   }
-  // Formato YYYYMMDD (como viene de Power Query a veces)
   if (/^\d{8}$/.test(String(val))) {
     const s = String(val);
     return new Date(s.slice(0,4), parseInt(s.slice(4,6))-1, parseInt(s.slice(6,8)));
@@ -609,44 +383,116 @@ function dateToStr(d) {
   return d.toLocaleDateString('es-ES', {day:'2-digit', month:'2-digit', year:'numeric'});
 }
 
-function daysBetween(a, b) {
-  return Math.round((b - a) / 86400000);
+function dateKey(d) {
+  return d.getFullYear() + '-' +
+    String(d.getMonth()+1).padStart(2,'0') + '-' +
+    String(d.getDate()).padStart(2,'0');
 }
 
 function addDays(d, n) {
-  const r = new Date(d);
-  r.setDate(r.getDate() + n);
-  return r;
-}
-
-function isWeekend(d) {
-  const day = d.getDay();
-  return day === 0 || day === 6;
+  const r = new Date(d); r.setDate(r.getDate() + n); return r;
 }
 
 function isToday(d) {
   const t = new Date();
-  return d.getFullYear() === t.getFullYear() && d.getMonth() === t.getMonth() && d.getDate() === t.getDate();
+  return d.getFullYear()===t.getFullYear() && d.getMonth()===t.getMonth() && d.getDate()===t.getDate();
 }
 
-const MONTHS_ES = ['ENE','FEB','MAR','ABR','MAY','JUN','JUL','AGO','SEP','OCT','NOV','DIC'];
+function isNonWorking(d) {
+  return dateKey(d) in nonWorkingMap;
+}
+
+function getNonWorkingName(d) {
+  return nonWorkingMap[dateKey(d)] || '';
+}
+
+function getThisWeekMonday() {
+  const today = new Date();
+  const day = today.getDay();
+  const diff = (day === 0) ? -6 : 1 - day;
+  const monday = new Date(today);
+  monday.setDate(today.getDate() + diff);
+  monday.setHours(0,0,0,0);
+  return monday;
+}
+
+// Semana ISO (norma española)
+function getISOWeek(d) {
+  const date = new Date(d);
+  date.setHours(0,0,0,0);
+  date.setDate(date.getDate() + 3 - (date.getDay()+6)%7);
+  const week1 = new Date(date.getFullYear(), 0, 4);
+  return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay()+6)%7) / 7);
+}
+
+// Mes del miércoles de la semana (más representativo)
+function getWeekMonth(monday) {
+  const wed = addDays(monday, 2);
+  return MONTHS_ES[wed.getMonth()];
+}
+
+// ─── NAVEGACIÓN ───────────────────────────────────────────────────────────────
+function changeWeek(dir) {
+  currentWeekMonday = addDays(currentWeekMonday, dir * 7);
+  syncYearFilterToWeek();
+  renderGantt();
+}
+
+function goToToday() {
+  currentWeekMonday = getThisWeekMonday();
+  syncYearFilterToWeek();
+  renderGantt();
+}
+
+function syncYearFilterToWeek() {
+  const wed = addDays(currentWeekMonday, 2);
+  const y = String(wed.getFullYear());
+  const sel = document.getElementById('filterYear');
+  if (sel) {
+    for (let i = 0; i < sel.options.length; i++) {
+      if (sel.options[i].value === y) { sel.value = y; break; }
+    }
+  }
+}
+
+function onYearChange() {
+  // Al cambiar año, ir a la primera semana de ese año
+  const y = parseInt(document.getElementById('filterYear').value);
+  if (y) {
+    // Buscar el lunes de la semana 1 de ese año
+    const jan4 = new Date(y, 0, 4);
+    const day = jan4.getDay();
+    const diff = (day === 0) ? -6 : 1 - day;
+    currentWeekMonday = new Date(jan4);
+    currentWeekMonday.setDate(jan4.getDate() + diff);
+    currentWeekMonday.setHours(0,0,0,0);
+  }
+  renderGantt();
+}
 
 // ─── CARGA DE DATOS ──────────────────────────────────────────────────────────
 async function loadData() {
   document.getElementById('ganttWrapper').innerHTML = `
-    <div class="loading">
-      <div class="spinner"></div>
-      <div class="loading-text">Cargando producción...</div>
-    </div>`;
+    <div class="loading"><div class="spinner"></div>
+    <div class="loading-text">Cargando producción...</div></div>`;
   document.getElementById('lastUpdate').textContent = 'Actualizando...';
 
   try {
-    const res = await fetch(JSON_URL + '?t=' + Date.now());
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const raw = await res.json();
+    const [resGantt, resFestivos] = await Promise.all([
+      fetch(JSON_URL + '?t=' + Date.now()),
+      fetch(FESTIVOS_URL + '?t=' + Date.now())
+    ]);
 
-    // El JSON puede ser array directo o tener wrapper
+    if (!resGantt.ok) throw new Error('HTTP ' + resGantt.status);
+    const raw = await resGantt.json();
     allData = Array.isArray(raw) ? raw : (raw.value || raw.data || []);
+
+    nonWorkingMap = {};
+    if (resFestivos.ok) {
+      const fest = await resFestivos.json();
+      (fest.festivos   || []).forEach(f => nonWorkingMap[f.fecha] = f.nombre);
+      (fest.vacaciones || []).forEach(f => nonWorkingMap[f.fecha] = f.nombre);
+    }
 
     document.getElementById('lastUpdate').textContent =
       'Actualizado: ' + new Date().toLocaleTimeString('es-ES', {hour:'2-digit', minute:'2-digit'});
@@ -655,41 +501,13 @@ async function loadData() {
     renderGantt();
   } catch(e) {
     document.getElementById('ganttWrapper').innerHTML =
-      `<div class="error-msg">⚠ No se pudo cargar gantt.json<br><small style="opacity:0.6;margin-top:8px;display:block">${e.message}</small><br><small style="opacity:0.4">Comprueba que la URL de OneDrive es pública</small></div>`;
+      `<div class="error-msg">⚠ No se pudo cargar gantt.json<br>
+      <small style="opacity:0.6;margin-top:8px;display:block">${e.message}</small></div>`;
     document.getElementById('lastUpdate').textContent = 'Error al cargar';
   }
 }
 
-// ─── FILTROS ──────────────────────────────────────────────────────────────────
-function getFilteredData() {
-
-  const serie  = document.getElementById('filterSerie').value;
-  const search = document.getElementById('filterSearch').value.toLowerCase();
-  const year   = document.getElementById('filterYear').value;
-
-  return allData.filter(row => {
-    const inicio = parseDate(row.EntradaProd);
-    const fin    = parseDate(row.ModFecha_Pentrega || row['ModFecha Pentrega'] || row.Fecha_Pentrega || row['Fecha Pentrega']);
-
-
-    if (serie && !row.KeyPedido?.startsWith(serie)) return false;
-    if (search) {
-      const hay = (row.CLIENTE || '') + ' ' + (row.Máquina || row.Maquina || '') + ' ' + (row.KeyPedido || '');
-      if (!hay.toLowerCase().includes(search)) return false;
-    }
-    if (year) {
-      const y = parseInt(year);
-      if (inicio && inicio.getFullYear() !== y && fin && fin.getFullYear() !== y) {
-        // Mostrar si el rango cruza el año
-        if (!(inicio && fin && inicio.getFullYear() <= y && fin.getFullYear() >= y)) return false;
-      }
-    }
-    // Solo mostrar si tiene EntradaProd rellena
-    if (!inicio) return false;
-    return true;
-  });
-}
-
+// ─── FILTRO AÑO ──────────────────────────────────────────────────────────────
 function populateYearFilter() {
   const years = new Set();
   allData.forEach(row => {
@@ -703,123 +521,142 @@ function populateYearFilter() {
   sel.innerHTML = '<option value="">Todos</option>';
   [...years].sort().forEach(y => {
     const opt = document.createElement('option');
-    opt.value = y;
-    opt.textContent = y;
+    opt.value = y; opt.textContent = y;
     if (String(y) === String(cur) || (!cur && y === new Date().getFullYear())) opt.selected = true;
     sel.appendChild(opt);
+  });
+  // Sincronizar currentWeekMonday con el año seleccionado si no hay valor previo
+  if (!cur) syncYearFilterToWeek();
+}
+
+// ─── FILTRO DE DATOS ─────────────────────────────────────────────────────────
+function getFilteredData() {
+  const serie  = document.getElementById('filterSerie').value;
+  const search = document.getElementById('filterSearch').value.toLowerCase();
+
+  // Rango de la semana visible: lunes a viernes
+  const weekStart = new Date(currentWeekMonday); weekStart.setHours(0,0,0,0);
+  const weekEnd   = addDays(weekStart, 4);        weekEnd.setHours(23,59,59,999);
+
+  return allData.filter(row => {
+    const inicio = parseDate(row.EntradaProd);
+    if (!inicio) return false;
+
+    const fin = parseDate(row['ModFecha Pentrega'] || row.ModFecha_Pentrega || row['Fecha Pentrega'] || row.Fecha_Pentrega);
+
+    // Filtro serie
+    if (serie && !row.KeyPedido?.startsWith(serie)) return false;
+
+    // Filtro búsqueda
+    if (search) {
+      const hay = (row.CLIENTE||'') + ' ' + (row.Máquina||row.Maquina||'') + ' ' + (row.KeyPedido||'');
+      if (!hay.toLowerCase().includes(search)) return false;
+    }
+
+    // Filtro semana: la barra debe cruzar la semana visible
+    const barStart = inicio;
+    const barEnd   = fin || inicio;
+    if (barEnd < weekStart || barStart > weekEnd) return false;
+
+    return true;
   });
 }
 
 // ─── RENDER PRINCIPAL ────────────────────────────────────────────────────────
 function renderGantt() {
+  // Días de la semana: lun a vie
+  const weekDays = [];
+  for (let i = 0; i < 5; i++) weekDays.push(addDays(currentWeekMonday, i));
+
+  // Etiqueta semana
+  const isoWeek   = getISOWeek(currentWeekMonday);
+  const weekMonth = getWeekMonth(currentWeekMonday);
+  document.getElementById('navMonth').textContent = weekMonth;
+  document.getElementById('navWeek').textContent  = 'Semana ' + isoWeek;
+
   const data = getFilteredData();
 
-  // Calcular rango de fechas
-  let minD = null, maxD = null;
-  data.forEach(row => {
-    const ini = parseDate(row.EntradaProd);
-    const fin = parseDate(row['ModFecha Pentrega'] || row.ModFecha_Pentrega || row['Fecha Pentrega'] || row.Fecha_Pentrega);
-    if (ini) { if (!minD || ini < minD) minD = ini; }
-    if (fin) { if (!maxD || fin > maxD) maxD = fin; }
-  });
+  // Comprobar si toda la semana es vacaciones/festivos
+  const allNonWorking = weekDays.every(d => isNonWorking(d));
+  // Nombre del bloque (primer nombre encontrado, ej "Vacaciones de Verano")
+  const nwName = allNonWorking ? getNonWorkingName(weekDays[0]) : '';
 
-  if (!minD || !maxD) {
-    document.getElementById('ganttWrapper').innerHTML = '<div class="gantt-empty">Sin datos para mostrar con los filtros actuales</div>';
-    updateStats(data);
-    return;
-  }
-
-  // Ampliar rango 7 días a cada lado
-  ganttStart = addDays(minD, -7);
-  ganttEnd   = addDays(maxD, 7);
-
-  // Generar array de días
-  allDays = [];
-  let cur = new Date(ganttStart);
-  while (cur <= ganttEnd) {
-    allDays.push(new Date(cur));
-    cur.setDate(cur.getDate() + 1);
-  }
-
-  // Agrupar días por mes
-  const monthGroups = [];
-  let curMonth = null;
-  allDays.forEach((d, i) => {
-    const key = d.getFullYear() + '-' + d.getMonth();
-    if (key !== curMonth) {
-      curMonth = key;
-      monthGroups.push({ label: MONTHS_ES[d.getMonth()] + ' ' + d.getFullYear(), days: [] });
-    }
-    monthGroups[monthGroups.length - 1].days.push({ d, i });
-  });
-
-  // Construir HTML
   let html = '<div class="gantt-container">';
 
-  // Header
+  // ── Cabecera ──
+  const weekWidthPx = weekDays.length * 36;
   html += '<div class="gantt-header">';
   html += `<div class="gantt-label-header">MÁQUINA / PEDIDO</div>`;
   html += '<div class="gantt-days-header">';
-  monthGroups.forEach(mg => {
-    html += `<div class="month-group">`;
-    html += `<div class="month-label" style="width:${mg.days.length * 36}px">${mg.label}</div>`;
-    html += '<div class="days-row">';
-    mg.days.forEach(({ d }) => {
-      const we = isWeekend(d);
-      const td = isToday(d);
-      const dayNames = ['D','L','M','X','J','V','S'];
-      html += `<div class="day-cell ${we?'weekend':''} ${td?'today':''}" >
-        <span class="day-num">${d.getDate()}</span>
-        <span class="day-name">${dayNames[d.getDay()]}</span>
-      </div>`;
-    });
-    html += '</div></div>';
+  html += `<div class="week-header-block">`;
+  html += `<div class="week-header-label" style="width:${weekWidthPx}px">
+    <span class="whl-month">${weekMonth}</span>
+    <span class="whl-week">· Semana ${isoWeek}</span>
+  </div>`;
+  html += '<div class="days-row">';
+  weekDays.forEach(d => {
+    const nw = isNonWorking(d);
+    const td = isToday(d);
+    const nwNombre = nw ? getNonWorkingName(d) : '';
+    let cls = td ? 'today' : (nw ? 'nonworking' : '');
+    html += `<div class="day-cell ${cls}">
+      <span class="day-num">${d.getDate()}</span>
+      <span class="day-name">${DAY_NAMES[d.getDay()]}</span>
+      ${nw && !td ? `<span class="day-festivo" title="${nwNombre}">${nwNombre}</span>` : ''}
+    </div>`;
   });
-  html += '</div></div>';
+  html += '</div></div></div></div>';
 
-  // Body
+  // ── Body ──
   html += '<div class="gantt-body">';
 
-  // Línea de hoy
-  const todayIdx = allDays.findIndex(d => isToday(d));
-  const todayLeft = todayIdx >= 0 ? (todayIdx * 36) : -1;
-
-  if (data.length === 0) {
-    html += '<div class="gantt-empty">Sin resultados</div>';
+  if (allNonWorking) {
+    // Semana completa de vacaciones/festivos
+    html += `<div class="vacaciones-banner">${nwName || 'Festivo / Vacaciones'}</div>`;
+  } else if (data.length === 0) {
+    html += '<div class="gantt-empty">Sin pedidos activos esta semana</div>';
   } else {
+    // Índice de hoy dentro de los días visibles
+    const todayIdx = weekDays.findIndex(d => isToday(d));
+    const todayLeft = todayIdx >= 0 ? todayIdx * 36 : -1;
+
     data.forEach(row => {
-      const maquina = row.Máquina || row.Maquina || '—';
-      const cliente = row.CLIENTE || '—';
-      const key     = row.KeyPedido || '—';
+      const maquina    = row.Máquina || row.Maquina || '—';
+      const cliente    = row.CLIENTE || '—';
+      const key        = row.KeyPedido || '—';
       const fechaSalida = row['Fecha salida MQ'] || row.Fecha_salida_MQ;
       const fechaFinFab = row['Fecha fin Fab']   || row.Fecha_fin_Fab;
       const fechaPent   = row['ModFecha Pentrega'] || row.ModFecha_Pentrega || row['Fecha Pentrega'] || row.Fecha_Pentrega;
 
       let color;
-      if (fechaSalida) {
-        color = '#00b050'; // Verde oscuro — Fecha salida MQ rellena
-      } else if (fechaFinFab) {
-        color = '#92d050'; // Verde claro — Fecha fin Fab rellena
-      } else if (fechaPent) {
-        color = '#ffff00'; // Amarillo — Fecha Pentrega o ModFecha Pentrega rellena
-      } else {
-        color = '#4b5563'; // Gris — Solo EntradaProd rellena
-      }
+      if (fechaSalida)      color = '#00b050';
+      else if (fechaFinFab) color = '#92d050';
+      else if (fechaPent)   color = '#ffff00';
+      else                  color = '#4b5563';
+
       const textColor = needsDarkText(color) ? '#000' : '#fff';
 
-      const ini = parseDate(row.EntradaProd);
+      const ini    = parseDate(row.EntradaProd);
       const finMod = parseDate(row['ModFecha Pentrega'] || row.ModFecha_Pentrega);
-      const finOrig = parseDate(row['Fecha Pentrega'] || row.Fecha_Pentrega);
-      const fin = finMod || finOrig;
+      const finOrig= parseDate(row['Fecha Pentrega']    || row.Fecha_Pentrega);
+      const fin    = finMod || finOrig;
 
-      // Calcular posición de barra
+      // Posición de barra dentro de los 5 días visibles
       let barLeft = '', barWidth = '', hasBar = false;
-      if (ini && fin) {
-        const startIdx = daysBetween(ganttStart, ini);
-        const endIdx   = daysBetween(ganttStart, fin);
-        if (endIdx >= 0 && startIdx < allDays.length) {
+      if (ini) {
+        // Clamp al rango visible
+        const weekStart = new Date(currentWeekMonday); weekStart.setHours(0,0,0,0);
+        const weekEnd   = addDays(weekStart, 4);        weekEnd.setHours(23,59,59,999);
+        const barStart  = ini  < weekStart ? weekStart : ini;
+        const barFinish = (fin || ini) > weekEnd ? weekEnd : (fin || ini);
+
+        // Días desde el lunes visible
+        const startIdx = Math.round((barStart - currentWeekMonday) / 86400000);
+        const endIdx   = Math.round((barFinish - currentWeekMonday) / 86400000);
+
+        if (endIdx >= 0 && startIdx <= 4) {
           const s = Math.max(0, startIdx);
-          const e = Math.min(allDays.length - 1, endIdx);
+          const e = Math.min(4, endIdx);
           barLeft  = s * 36;
           barWidth = Math.max(36, (e - s + 1) * 36);
           hasBar = true;
@@ -840,10 +677,10 @@ function renderGantt() {
       html += `<div class="gantt-row-bars" style="position:relative">`;
 
       // Fondos de días
-      allDays.forEach((d, i) => {
-        const we = isWeekend(d);
+      weekDays.forEach(d => {
+        const nw = isNonWorking(d);
         const td = isToday(d);
-        html += `<div class="day-bg ${we?'weekend':''} ${td?'today':''}"></div>`;
+        html += `<div class="day-bg ${td?'today':(nw?'nonworking':'')}"></div>`;
       });
 
       // Línea de hoy
@@ -855,16 +692,14 @@ function renderGantt() {
       if (hasBar) {
         const dataStr = encodeURIComponent(JSON.stringify({
           key, maquina, cliente, color,
-          ini: dateToStr(ini),
-          fin: dateToStr(fin),
-          finMod: dateToStr(finMod),
-          finOrig: dateToStr(finOrig),
-          fechaSalida: dateToStr(parseDate(row['Fecha salida MQ'] || row.Fecha_salida_MQ)),
+          ini: dateToStr(ini), fin: dateToStr(fin),
+          finMod: dateToStr(finMod), finOrig: dateToStr(finOrig),
+          fechaSalida: dateToStr(parseDate(fechaSalida)),
           etiqueta
         }));
         html += `<div class="gantt-bar"
-          style="left:${barLeft}px; width:${barWidth}px; background:${color}; color:${textColor}"
-          onmouseenter="showTooltip(event, '${dataStr}')"
+          style="left:${barLeft}px;width:${barWidth}px;background:${color};color:${textColor}"
+          onmouseenter="showTooltip(event,'${dataStr}')"
           onmouseleave="hideTooltip()"
         >${etiqueta}</div>`;
       }
@@ -874,15 +709,13 @@ function renderGantt() {
   }
 
   html += '</div></div>';
-
   document.getElementById('ganttWrapper').innerHTML = html;
   updateStats(data);
 }
 
 // ─── TOOLTIP ──────────────────────────────────────────────────────────────────
 function showTooltip(e, dataStr) {
-  const d = JSON.parse(decodeURIComponent(dataStr));
-  const color = d.color;
+  const d  = JSON.parse(decodeURIComponent(dataStr));
   const tt = document.getElementById('tooltip');
   tt.innerHTML = `
     <div class="tooltip-title">${d.etiqueta}</div>
@@ -891,9 +724,8 @@ function showTooltip(e, dataStr) {
     <div class="tooltip-row"><span>Cliente</span><span>${d.cliente}</span></div>
     <div class="tooltip-row"><span>Inicio prod.</span><span>${d.ini}</span></div>
     <div class="tooltip-row"><span>F. entrega orig.</span><span>${d.finOrig}</span></div>
-    ${d.finMod && d.finMod !== '—' ? `<div class="tooltip-row"><span>F. entrega mod.</span><span style="color:#ffc000">${d.finMod}</span></div>` : ''}
-    ${d.fechaSalida && d.fechaSalida !== '—' ? `<div class="tooltip-row"><span>Salida almacén</span><span>${d.fechaSalida}</span></div>` : ''}
-
+    ${d.finMod && d.finMod!=='—' ? `<div class="tooltip-row"><span>F. entrega mod.</span><span style="color:#ffc000">${d.finMod}</span></div>` : ''}
+    ${d.fechaSalida && d.fechaSalida!=='—' ? `<div class="tooltip-row"><span>Salida almacén</span><span>${d.fechaSalida}</span></div>` : ''}
   `;
   tt.classList.add('visible');
   moveTooltip(e);
@@ -901,32 +733,28 @@ function showTooltip(e, dataStr) {
 
 function moveTooltip(e) {
   const tt = document.getElementById('tooltip');
-  const x = e.clientX + 16;
-  const y = e.clientY - 10;
-  const w = tt.offsetWidth;
-  const h = tt.offsetHeight;
-  tt.style.left = (x + w > window.innerWidth ? x - w - 32 : x) + 'px';
-  tt.style.top  = (y + h > window.innerHeight ? y - h : y) + 'px';
+  const x = e.clientX + 16, y = e.clientY - 10;
+  const w = tt.offsetWidth,  h = tt.offsetHeight;
+  tt.style.left = (x+w > window.innerWidth  ? x-w-32 : x) + 'px';
+  tt.style.top  = (y+h > window.innerHeight ? y-h    : y) + 'px';
 }
 
 document.addEventListener('mousemove', e => {
   if (document.getElementById('tooltip').classList.contains('visible')) moveTooltip(e);
 });
 
-function hideTooltip() {
-  document.getElementById('tooltip').classList.remove('visible');
-}
+function hideTooltip() { document.getElementById('tooltip').classList.remove('visible'); }
 
 // ─── STATS ───────────────────────────────────────────────────────────────────
 function updateStats(data) {
-  const total      = data.length;
-  const entregadas = data.filter(r => r['Fecha salida MQ'] || r.Fecha_salida_MQ).length;
-  const finalizadas = data.filter(r => (r['Fecha fin Fab'] || r.Fecha_fin_Fab) && !(r['Fecha salida MQ'] || r.Fecha_salida_MQ)).length;
-  const conFecha   = data.filter(r => (r['ModFecha Pentrega'] || r.ModFecha_Pentrega || r['Fecha Pentrega'] || r.Fecha_Pentrega) && !(r['Fecha fin Fab'] || r.Fecha_fin_Fab) && !(r['Fecha salida MQ'] || r.Fecha_salida_MQ)).length;
-  const sinFecha   = data.filter(r => !(r['ModFecha Pentrega'] || r.ModFecha_Pentrega || r['Fecha Pentrega'] || r.Fecha_Pentrega) && !(r['Fecha fin Fab'] || r.Fecha_fin_Fab) && !(r['Fecha salida MQ'] || r.Fecha_salida_MQ)).length;
+  const total       = data.length;
+  const entregadas  = data.filter(r => r['Fecha salida MQ'] || r.Fecha_salida_MQ).length;
+  const finalizadas = data.filter(r => (r['Fecha fin Fab']||r.Fecha_fin_Fab) && !(r['Fecha salida MQ']||r.Fecha_salida_MQ)).length;
+  const conFecha    = data.filter(r => (r['ModFecha Pentrega']||r.ModFecha_Pentrega||r['Fecha Pentrega']||r.Fecha_Pentrega) && !(r['Fecha fin Fab']||r.Fecha_fin_Fab) && !(r['Fecha salida MQ']||r.Fecha_salida_MQ)).length;
+  const sinFecha    = data.filter(r => !(r['ModFecha Pentrega']||r.ModFecha_Pentrega||r['Fecha Pentrega']||r.Fecha_Pentrega) && !(r['Fecha fin Fab']||r.Fecha_fin_Fab) && !(r['Fecha salida MQ']||r.Fecha_salida_MQ)).length;
 
   document.getElementById('statsBar').innerHTML = `
-    <div class="stat"><span>Total:</span><span class="stat-val">${total}</span></div>
+    <div class="stat"><span>Esta semana:</span><span class="stat-val">${total}</span></div>
     <div class="stat"><span>Con fecha entrega:</span><span class="stat-val" style="color:#b8860b">${conFecha}</span></div>
     <div class="stat"><span>Finalizadas:</span><span class="stat-val" style="color:#92d050">${finalizadas}</span></div>
     <div class="stat"><span>Entregadas:</span><span class="stat-val" style="color:#00b050">${entregadas}</span></div>
@@ -936,15 +764,11 @@ function updateStats(data) {
 
 // ─── UTILS ───────────────────────────────────────────────────────────────────
 function needsDarkText(hex) {
-  const r = parseInt(hex.slice(1,3),16);
-  const g = parseInt(hex.slice(3,5),16);
-  const b = parseInt(hex.slice(5,7),16);
-  return (r*299 + g*587 + b*114) / 1000 > 128;
+  const r=parseInt(hex.slice(1,3),16), g=parseInt(hex.slice(3,5),16), b=parseInt(hex.slice(5,7),16);
+  return (r*299+g*587+b*114)/1000 > 128;
 }
 
-function showDetail(key) {
-  // Reservado para futura expansión
-}
+function showDetail(key) { /* reservado */ }
 
 // ─── INIT ─────────────────────────────────────────────────────────────────────
 loadData();
