@@ -9892,10 +9892,10 @@
     "Código bastidor": null,
     "Observaciones de pedido": null,
     "Estado MQ": "Finalizado",
-    "EntradaProd": null,
+    "EntradaProd": "2025-11-21T00:00:00",
     "Fecha Pentrega": null,
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": null,
+    "Fecha fin Fab": "2025-12-22T00:00:00",
     "Fecha salida MQ": null,
     "Etiqueta": "MS-15-CRT212L-Alarsis Corte industrial, S.L.U."
   },
@@ -10660,7 +10660,7 @@
     "EntradaProd": null,
     "Fecha Pentrega": null,
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2026-03-25T00:00:00",
+    "Fecha fin Fab": null,
     "Fecha salida MQ": "2026-04-07T00:00:00",
     "Etiqueta": "MQ-962-CRT212L-Copisteria Coca, S.L."
   },
