@@ -795,21 +795,6 @@
     "Etiqueta": "MQ-334-CRT212L-RODBE RUSADIR SLU"
   },
   {
-    "KeyPedido": "MQ-335",
-    "FECHA": "2021-04-20T00:00:00",
-    "CLIENTE": "Ferreteria Arga",
-    "Máquina": "PL315EST40GB",
-    "Código bastidor": "P0451.04",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2021-05-10T00:00:00",
-    "Fecha salida MQ": null,
-    "Etiqueta": "MQ-335-PL315EST40GB-Ferreteria Arga"
-  },
-  {
     "KeyPedido": "MQ-336",
     "FECHA": "2021-04-20T00:00:00",
     "CLIENTE": "Pretersa",
@@ -823,6 +808,21 @@
     "Fecha fin Fab": "2021-05-11T00:00:00",
     "Fecha salida MQ": null,
     "Etiqueta": "MQ-336-CRT420-Pretersa"
+  },
+  {
+    "KeyPedido": "MQ-335",
+    "FECHA": "2021-04-20T00:00:00",
+    "CLIENTE": "Ferreteria Arga",
+    "Máquina": "PL315EST40GB",
+    "Código bastidor": "P0451.04",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2021-05-10T00:00:00",
+    "Fecha salida MQ": null,
+    "Etiqueta": "MQ-335-PL315EST40GB-Ferreteria Arga"
   },
   {
     "KeyPedido": "MQ-337",
@@ -915,34 +915,19 @@
     "Etiqueta": "MQ-342-FRH210ALM3T40-Invernaderos y complementos, S.A."
   },
   {
-    "KeyPedido": "MQ-347",
-    "FECHA": "2021-05-14T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0398.09",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2021-07-15T00:00:00",
-    "Fecha salida MQ": null,
-    "Etiqueta": "MQ-347-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-343",
+    "KeyPedido": "MQ-345",
     "FECHA": "2021-05-14T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
     "Máquina": "FRH50VSVM1M23GGVX",
-    "Código bastidor": "P0465.01",
+    "Código bastidor": "P0465.03",
     "Observaciones de pedido": null,
     "Estado MQ": "Entregado",
     "EntradaProd": null,
-    "Fecha Pentrega": "2021-11-26T00:00:00",
+    "Fecha Pentrega": "2022-02-11T00:00:00",
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2021-12-09T00:00:00",
-    "Fecha salida MQ": "2021-12-10T00:00:00",
-    "Etiqueta": "MQ-343-FRH50VSVM1M23GGVX-Voxelcare, S.L."
+    "Fecha fin Fab": "2022-02-17T00:00:00",
+    "Fecha salida MQ": "2022-02-16T00:00:00",
+    "Etiqueta": "MQ-345-FRH50VSVM1M23GGVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-354",
@@ -960,6 +945,21 @@
     "Etiqueta": "MQ-354-FRH165VSVM3T40BGVX-Voxelcare, S.L."
   },
   {
+    "KeyPedido": "MQ-353",
+    "FECHA": "2021-05-14T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH165VSVM3T22BGVX",
+    "Código bastidor": "P0446.07",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2021-10-27T00:00:00",
+    "Fecha salida MQ": "2021-10-28T00:00:00",
+    "Etiqueta": "MQ-353-FRH165VSVM3T22BGVX-Voxelcare, S.L."
+  },
+  {
     "KeyPedido": "MQ-352",
     "FECHA": "2021-05-14T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
@@ -975,6 +975,21 @@
     "Etiqueta": "MQ-352-FRH165VSVM3T40BGVX-Voxelcare, S.L."
   },
   {
+    "KeyPedido": "MQ-346",
+    "FECHA": "2021-05-14T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH50VSVM1M23GGVX",
+    "Código bastidor": "P0465.04",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2022-03-25T00:00:00",
+    "ModFecha Pentrega": "2022-04-11T00:00:00",
+    "Fecha fin Fab": "2022-04-20T00:00:00",
+    "Fecha salida MQ": "2022-04-12T00:00:00",
+    "Etiqueta": "MQ-346-FRH50VSVM1M23GGVX-Voxelcare, S.L."
+  },
+  {
     "KeyPedido": "MQ-351",
     "FECHA": "2021-05-14T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
@@ -988,21 +1003,6 @@
     "Fecha fin Fab": "2021-07-30T00:00:00",
     "Fecha salida MQ": null,
     "Etiqueta": "MQ-351-FRH165VSVM3T40BGVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-353",
-    "FECHA": "2021-05-14T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH165VSVM3T22BGVX",
-    "Código bastidor": "P0446.07",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2021-10-27T00:00:00",
-    "Fecha salida MQ": "2021-10-28T00:00:00",
-    "Etiqueta": "MQ-353-FRH165VSVM3T22BGVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-349",
@@ -1035,6 +1035,36 @@
     "Etiqueta": "MQ-348-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
+    "KeyPedido": "MQ-347",
+    "FECHA": "2021-05-14T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH70VCSVM1M23GBVX",
+    "Código bastidor": "P0398.09",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2021-07-15T00:00:00",
+    "Fecha salida MQ": null,
+    "Etiqueta": "MQ-347-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
+  },
+  {
+    "KeyPedido": "MQ-343",
+    "FECHA": "2021-05-14T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH50VSVM1M23GGVX",
+    "Código bastidor": "P0465.01",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2021-11-26T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2021-12-09T00:00:00",
+    "Fecha salida MQ": "2021-12-10T00:00:00",
+    "Etiqueta": "MQ-343-FRH50VSVM1M23GGVX-Voxelcare, S.L."
+  },
+  {
     "KeyPedido": "MQ-344",
     "FECHA": "2021-05-14T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
@@ -1048,36 +1078,6 @@
     "Fecha fin Fab": "2022-01-17T00:00:00",
     "Fecha salida MQ": "2022-01-12T00:00:00",
     "Etiqueta": "MQ-344-FRH50VSVM1M23GGVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-345",
-    "FECHA": "2021-05-14T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH50VSVM1M23GGVX",
-    "Código bastidor": "P0465.03",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2022-02-11T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2022-02-17T00:00:00",
-    "Fecha salida MQ": "2022-02-16T00:00:00",
-    "Etiqueta": "MQ-345-FRH50VSVM1M23GGVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-346",
-    "FECHA": "2021-05-14T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH50VSVM1M23GGVX",
-    "Código bastidor": "P0465.04",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2022-03-25T00:00:00",
-    "ModFecha Pentrega": "2022-04-11T00:00:00",
-    "Fecha fin Fab": "2022-04-20T00:00:00",
-    "Fecha salida MQ": "2022-04-12T00:00:00",
-    "Etiqueta": "MQ-346-FRH50VSVM1M23GGVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-350",
@@ -1095,21 +1095,6 @@
     "Etiqueta": "MQ-350-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-355",
-    "FECHA": "2021-05-17T00:00:00",
-    "CLIENTE": "Maquinaria Geka, S.L.U.",
-    "Máquina": "PL315EST40GA",
-    "Código bastidor": "P0451.08",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2021-08-03T00:00:00",
-    "Fecha salida MQ": null,
-    "Etiqueta": "MQ-355-PL315EST40GA-Maquinaria Geka, S.L.U."
-  },
-  {
     "KeyPedido": "MQ-356",
     "FECHA": "2021-05-17T00:00:00",
     "CLIENTE": "Maquinaria Geka, S.L.U.",
@@ -1123,6 +1108,21 @@
     "Fecha fin Fab": "2021-09-15T00:00:00",
     "Fecha salida MQ": "2021-11-09T00:00:00",
     "Etiqueta": "MQ-356-PL315EST40GA-Maquinaria Geka, S.L.U."
+  },
+  {
+    "KeyPedido": "MQ-355",
+    "FECHA": "2021-05-17T00:00:00",
+    "CLIENTE": "Maquinaria Geka, S.L.U.",
+    "Máquina": "PL315EST40GA",
+    "Código bastidor": "P0451.08",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2021-08-03T00:00:00",
+    "Fecha salida MQ": null,
+    "Etiqueta": "MQ-355-PL315EST40GA-Maquinaria Geka, S.L.U."
   },
   {
     "KeyPedido": "MQ-357",
@@ -1200,19 +1200,19 @@
     "Etiqueta": "MQ-361-PL315ET40GA-Maquinaria Geka, S.L.U."
   },
   {
-    "KeyPedido": "MQ-363",
+    "KeyPedido": "MQ-362",
     "FECHA": "2021-06-10T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH166VSVM3M23BGVX",
-    "Código bastidor": "P0467.01",
+    "CLIENTE": "Grafibaleares 2007, S.L. Graficon",
+    "Máquina": "FR250ALM1M23",
+    "Código bastidor": "P0277.00",
     "Observaciones de pedido": null,
     "Estado MQ": "Entregado",
     "EntradaProd": null,
     "Fecha Pentrega": null,
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2021-07-30T00:00:00",
+    "Fecha fin Fab": "2021-07-19T00:00:00",
     "Fecha salida MQ": null,
-    "Etiqueta": "MQ-363-FRH166VSVM3M23BGVX-Voxelcare, S.L."
+    "Etiqueta": "MQ-362-FR250ALM1M23-Grafibaleares 2007, S.L. Graficon"
   },
   {
     "KeyPedido": "MQ-364",
@@ -1230,34 +1230,19 @@
     "Etiqueta": "MQ-364-FRH166VSVM3M23BGVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-362",
+    "KeyPedido": "MQ-363",
     "FECHA": "2021-06-10T00:00:00",
-    "CLIENTE": "Grafibaleares 2007, S.L. Graficon",
-    "Máquina": "FR250ALM1M23",
-    "Código bastidor": "P0277.00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH166VSVM3M23BGVX",
+    "Código bastidor": "P0467.01",
     "Observaciones de pedido": null,
     "Estado MQ": "Entregado",
     "EntradaProd": null,
     "Fecha Pentrega": null,
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2021-07-19T00:00:00",
+    "Fecha fin Fab": "2021-07-30T00:00:00",
     "Fecha salida MQ": null,
-    "Etiqueta": "MQ-362-FR250ALM1M23-Grafibaleares 2007, S.L. Graficon"
-  },
-  {
-    "KeyPedido": "MQ-365",
-    "FECHA": "2021-06-11T00:00:00",
-    "CLIENTE": "Maquinaria Geka, S.L.U.",
-    "Máquina": "PL315ET40GA",
-    "Código bastidor": "P0464.03",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2021-09-30T00:00:00",
-    "Fecha salida MQ": "2021-11-10T00:00:00",
-    "Etiqueta": "MQ-365-PL315ET40GA-Maquinaria Geka, S.L.U."
+    "Etiqueta": "MQ-363-FRH166VSVM3M23BGVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-367",
@@ -1273,6 +1258,21 @@
     "Fecha fin Fab": "2021-10-25T00:00:00",
     "Fecha salida MQ": "2021-11-08T00:00:00",
     "Etiqueta": "MQ-367-PL420EST40GA-Maquinaria Geka, S.L.U."
+  },
+  {
+    "KeyPedido": "MQ-365",
+    "FECHA": "2021-06-11T00:00:00",
+    "CLIENTE": "Maquinaria Geka, S.L.U.",
+    "Máquina": "PL315ET40GA",
+    "Código bastidor": "P0464.03",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2021-09-30T00:00:00",
+    "Fecha salida MQ": "2021-11-10T00:00:00",
+    "Etiqueta": "MQ-365-PL315ET40GA-Maquinaria Geka, S.L.U."
   },
   {
     "KeyPedido": "MQ-366",
@@ -2970,6 +2970,21 @@
     "Etiqueta": "MQ-479-FRH165VSVM3T40BGVX-Voxelcare, S.L."
   },
   {
+    "KeyPedido": "MQ-480",
+    "FECHA": "2022-03-02T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH50VSVM1M23GGVX",
+    "Código bastidor": "P0504.01",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2022-06-10T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2022-06-16T00:00:00",
+    "Fecha salida MQ": "2022-06-16T00:00:00",
+    "Etiqueta": "MQ-480-FRH50VSVM1M23GGVX-Voxelcare, S.L."
+  },
+  {
     "KeyPedido": "MQ-481",
     "FECHA": "2022-03-02T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
@@ -2983,21 +2998,6 @@
     "Fecha fin Fab": "2022-06-30T00:00:00",
     "Fecha salida MQ": "2022-07-12T00:00:00",
     "Etiqueta": "MQ-481-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-482",
-    "FECHA": "2022-03-02T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0490.09",
-    "Observaciones de pedido": "Retraso del 15/07 al 06/10",
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2022-07-15T00:00:00",
-    "ModFecha Pentrega": "2022-10-17T00:00:00",
-    "Fecha fin Fab": "2022-10-13T00:00:00",
-    "Fecha salida MQ": "2022-11-07T00:00:00",
-    "Etiqueta": "MQ-482-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-483",
@@ -3045,19 +3045,19 @@
     "Etiqueta": "MQ-485-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-480",
+    "KeyPedido": "MQ-482",
     "FECHA": "2022-03-02T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH50VSVM1M23GGVX",
-    "Código bastidor": "P0504.01",
-    "Observaciones de pedido": null,
+    "Máquina": "FRH70VCSVM1M23GBVX",
+    "Código bastidor": "P0490.09",
+    "Observaciones de pedido": "Retraso del 15/07 al 06/10",
     "Estado MQ": "Entregado",
     "EntradaProd": null,
-    "Fecha Pentrega": "2022-06-10T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2022-06-16T00:00:00",
-    "Fecha salida MQ": "2022-06-16T00:00:00",
-    "Etiqueta": "MQ-480-FRH50VSVM1M23GGVX-Voxelcare, S.L."
+    "Fecha Pentrega": "2022-07-15T00:00:00",
+    "ModFecha Pentrega": "2022-10-17T00:00:00",
+    "Fecha fin Fab": "2022-10-13T00:00:00",
+    "Fecha salida MQ": "2022-11-07T00:00:00",
+    "Etiqueta": "MQ-482-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-487",
@@ -3435,21 +3435,6 @@
     "Etiqueta": "MQ-510-FR223D-El paraguas events, S.L."
   },
   {
-    "KeyPedido": "MQ-512",
-    "FECHA": "2022-04-25T00:00:00",
-    "CLIENTE": "Mainpol Galicia S.L.U.",
-    "Máquina": "CRT210",
-    "Código bastidor": "P0477.03",
-    "Observaciones de pedido": "Se retrasa del 27/05 al 13/06",
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2022-06-13T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2022-06-14T00:00:00",
-    "Fecha salida MQ": "2022-06-29T00:00:00",
-    "Etiqueta": "MQ-512-CRT210-Mainpol Galicia S.L.U."
-  },
-  {
     "KeyPedido": "MQ-511",
     "FECHA": "2022-04-25T00:00:00",
     "CLIENTE": "STARTING THE EARTH MOVEMENT, S.L.",
@@ -3463,6 +3448,21 @@
     "Fecha fin Fab": "2022-10-28T00:00:00",
     "Fecha salida MQ": "2022-10-27T00:00:00",
     "Etiqueta": "MQ-511-PL420HDT40GB-STARTING THE EARTH MOVEMENT, S.L."
+  },
+  {
+    "KeyPedido": "MQ-512",
+    "FECHA": "2022-04-25T00:00:00",
+    "CLIENTE": "Mainpol Galicia S.L.U.",
+    "Máquina": "CRT210",
+    "Código bastidor": "P0477.03",
+    "Observaciones de pedido": "Se retrasa del 27/05 al 13/06",
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2022-06-13T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2022-06-14T00:00:00",
+    "Fecha salida MQ": "2022-06-29T00:00:00",
+    "Etiqueta": "MQ-512-CRT210-Mainpol Galicia S.L.U."
   },
   {
     "KeyPedido": "MQ-513",
@@ -3480,21 +3480,6 @@
     "Etiqueta": "MQ-513-CRT212-A mi manera comunicación, S.L.U."
   },
   {
-    "KeyPedido": "MQ-514",
-    "FECHA": "2022-05-09T00:00:00",
-    "CLIENTE": "Maquinaria Geka, S.L.U.",
-    "Máquina": "PL315ET40GA",
-    "Código bastidor": "P0502.08",
-    "Observaciones de pedido": "Retrasa del 05/09 al 05/12",
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2022-12-05T00:00:00",
-    "ModFecha Pentrega": "2023-01-17T00:00:00",
-    "Fecha fin Fab": "2023-01-12T00:00:00",
-    "Fecha salida MQ": "2023-01-16T00:00:00",
-    "Etiqueta": "MQ-514-PL315ET40GA-Maquinaria Geka, S.L.U."
-  },
-  {
     "KeyPedido": "MQ-515",
     "FECHA": "2022-05-09T00:00:00",
     "CLIENTE": "Maquinaria Geka, S.L.U.",
@@ -3508,6 +3493,21 @@
     "Fecha fin Fab": "2023-02-08T00:00:00",
     "Fecha salida MQ": "2023-02-10T00:00:00",
     "Etiqueta": "MQ-515-PL315ET40GA-Maquinaria Geka, S.L.U."
+  },
+  {
+    "KeyPedido": "MQ-514",
+    "FECHA": "2022-05-09T00:00:00",
+    "CLIENTE": "Maquinaria Geka, S.L.U.",
+    "Máquina": "PL315ET40GA",
+    "Código bastidor": "P0502.08",
+    "Observaciones de pedido": "Retrasa del 05/09 al 05/12",
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2022-12-05T00:00:00",
+    "ModFecha Pentrega": "2023-01-17T00:00:00",
+    "Fecha fin Fab": "2023-01-12T00:00:00",
+    "Fecha salida MQ": "2023-01-16T00:00:00",
+    "Etiqueta": "MQ-514-PL315ET40GA-Maquinaria Geka, S.L.U."
   },
   {
     "KeyPedido": "MQ-516",
@@ -3645,21 +3645,6 @@
     "Etiqueta": "MQ-524-FRC412V7CTPT40-Tim Mott Associates Ltd"
   },
   {
-    "KeyPedido": "MQ-526",
-    "FECHA": "2022-06-22T00:00:00",
-    "CLIENTE": "Maquinaria Geka, S.L.U.",
-    "Máquina": "PL315ET40GA",
-    "Código bastidor": "P0502.10",
-    "Observaciones de pedido": "Replanificado 2022",
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2023-02-24T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2023-03-02T00:00:00",
-    "Fecha salida MQ": "2023-03-07T00:00:00",
-    "Etiqueta": "MQ-526-PL315ET40GA-Maquinaria Geka, S.L.U."
-  },
-  {
     "KeyPedido": "MQ-525",
     "FECHA": "2022-06-22T00:00:00",
     "CLIENTE": "Maquinaria Geka, S.L.U.",
@@ -3673,6 +3658,21 @@
     "Fecha fin Fab": "2022-10-10T00:00:00",
     "Fecha salida MQ": "2022-10-11T00:00:00",
     "Etiqueta": "MQ-525-PL210ET40GA-Maquinaria Geka, S.L.U."
+  },
+  {
+    "KeyPedido": "MQ-526",
+    "FECHA": "2022-06-22T00:00:00",
+    "CLIENTE": "Maquinaria Geka, S.L.U.",
+    "Máquina": "PL315ET40GA",
+    "Código bastidor": "P0502.10",
+    "Observaciones de pedido": "Replanificado 2022",
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2023-02-24T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2023-03-02T00:00:00",
+    "Fecha salida MQ": "2023-03-07T00:00:00",
+    "Etiqueta": "MQ-526-PL315ET40GA-Maquinaria Geka, S.L.U."
   },
   {
     "KeyPedido": "MQ-528",
@@ -3870,19 +3870,19 @@
     "Etiqueta": "MQ-539-FH350V7A10T40-TotalPrint"
   },
   {
-    "KeyPedido": "MQ-542",
+    "KeyPedido": "MQ-540",
     "FECHA": "2022-07-29T00:00:00",
-    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
-    "Máquina": "FR2153D",
-    "Código bastidor": "P0501.02",
-    "Observaciones de pedido": "Stock Alarsis-Se ha consumido en el MQ725",
-    "Estado MQ": "Finalizado",
+    "CLIENTE": "Maquinaria Geka, S.L.U.",
+    "Máquina": "PL210ET40GA",
+    "Código bastidor": "P0519.01",
+    "Observaciones de pedido": "Replanificado 2022",
+    "Estado MQ": "Entregado",
     "EntradaProd": null,
-    "Fecha Pentrega": "2022-09-13T00:00:00",
+    "Fecha Pentrega": "2023-03-03T00:00:00",
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2022-09-21T00:00:00",
-    "Fecha salida MQ": null,
-    "Etiqueta": "MQ-542-FR2153D-Alarsis Corte industrial, S.L.U."
+    "Fecha fin Fab": "2023-03-02T00:00:00",
+    "Fecha salida MQ": "2023-03-07T00:00:00",
+    "Etiqueta": "MQ-540-PL210ET40GA-Maquinaria Geka, S.L.U."
   },
   {
     "KeyPedido": "MQ-541",
@@ -3900,19 +3900,19 @@
     "Etiqueta": "MQ-541-PL315HDT40GB-Alarsis Corte industrial, S.L.U."
   },
   {
-    "KeyPedido": "MQ-540",
+    "KeyPedido": "MQ-542",
     "FECHA": "2022-07-29T00:00:00",
-    "CLIENTE": "Maquinaria Geka, S.L.U.",
-    "Máquina": "PL210ET40GA",
-    "Código bastidor": "P0519.01",
-    "Observaciones de pedido": "Replanificado 2022",
-    "Estado MQ": "Entregado",
+    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
+    "Máquina": "FR2153D",
+    "Código bastidor": "P0501.02",
+    "Observaciones de pedido": "Stock Alarsis-Se ha consumido en el MQ725",
+    "Estado MQ": "Finalizado",
     "EntradaProd": null,
-    "Fecha Pentrega": "2023-03-03T00:00:00",
+    "Fecha Pentrega": "2022-09-13T00:00:00",
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2023-03-02T00:00:00",
-    "Fecha salida MQ": "2023-03-07T00:00:00",
-    "Etiqueta": "MQ-540-PL210ET40GA-Maquinaria Geka, S.L.U."
+    "Fecha fin Fab": "2022-09-21T00:00:00",
+    "Fecha salida MQ": null,
+    "Etiqueta": "MQ-542-FR2153D-Alarsis Corte industrial, S.L.U."
   },
   {
     "KeyPedido": "MQ-544",
@@ -4470,21 +4470,6 @@
     "Etiqueta": "MQ-580-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-583",
-    "FECHA": "2023-01-09T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0531.03",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2023-04-14T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2023-04-24T00:00:00",
-    "Fecha salida MQ": "2023-05-16T00:00:00",
-    "Etiqueta": "MQ-583-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
-  },
-  {
     "KeyPedido": "MQ-579",
     "FECHA": "2023-01-09T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
@@ -4498,6 +4483,21 @@
     "Fecha fin Fab": "2023-04-04T00:00:00",
     "Fecha salida MQ": "2023-04-04T00:00:00",
     "Etiqueta": "MQ-579-FRH50VSVM1M23GGVX-Voxelcare, S.L."
+  },
+  {
+    "KeyPedido": "MQ-583",
+    "FECHA": "2023-01-09T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH70VCSVM1M23GBVX",
+    "Código bastidor": "P0531.03",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2023-04-14T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2023-04-24T00:00:00",
+    "Fecha salida MQ": "2023-05-16T00:00:00",
+    "Etiqueta": "MQ-583-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-582",
@@ -4590,19 +4590,19 @@
     "Etiqueta": "MQ-587-PL315ET40GA-Maquinaria Geka, S.L.U."
   },
   {
-    "KeyPedido": "MQ-588",
+    "KeyPedido": "MQ-591",
     "FECHA": "2023-01-17T00:00:00",
-    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
-    "Máquina": "PL315EST40GB",
-    "Código bastidor": "P0529.04",
-    "Observaciones de pedido": "Pedido stock Alarsis",
-    "Estado MQ": "Finalizado",
+    "CLIENTE": "Maquinaria Geka, S.L.U.",
+    "Máquina": "PL420ET40GA",
+    "Código bastidor": "P0468.03",
+    "Observaciones de pedido": "Se le manda a posteriori el KSPL420",
+    "Estado MQ": "Entregado",
     "EntradaProd": null,
-    "Fecha Pentrega": "2023-04-28T00:00:00",
+    "Fecha Pentrega": "2023-05-05T00:00:00",
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2023-03-27T00:00:00",
-    "Fecha salida MQ": null,
-    "Etiqueta": "MQ-588-PL315EST40GB-Alarsis Corte industrial, S.L.U."
+    "Fecha fin Fab": "2023-04-24T00:00:00",
+    "Fecha salida MQ": "2023-04-25T00:00:00",
+    "Etiqueta": "MQ-591-PL420ET40GA-Maquinaria Geka, S.L.U."
   },
   {
     "KeyPedido": "MQ-590",
@@ -4620,21 +4620,6 @@
     "Etiqueta": "MQ-590-FRH350V7M5T40-Alarsis Corte industrial, S.L.U."
   },
   {
-    "KeyPedido": "MQ-591",
-    "FECHA": "2023-01-17T00:00:00",
-    "CLIENTE": "Maquinaria Geka, S.L.U.",
-    "Máquina": "PL420ET40GA",
-    "Código bastidor": "P0468.03",
-    "Observaciones de pedido": "Se le manda a posteriori el KSPL420",
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2023-05-05T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2023-04-24T00:00:00",
-    "Fecha salida MQ": "2023-04-25T00:00:00",
-    "Etiqueta": "MQ-591-PL420ET40GA-Maquinaria Geka, S.L.U."
-  },
-  {
     "KeyPedido": "MQ-589",
     "FECHA": "2023-01-17T00:00:00",
     "CLIENTE": "Alarsis Corte industrial, S.L.U.",
@@ -4648,6 +4633,21 @@
     "Fecha fin Fab": "2023-03-29T00:00:00",
     "Fecha salida MQ": null,
     "Etiqueta": "MQ-589-CRT210-Alarsis Corte industrial, S.L.U."
+  },
+  {
+    "KeyPedido": "MQ-588",
+    "FECHA": "2023-01-17T00:00:00",
+    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
+    "Máquina": "PL315EST40GB",
+    "Código bastidor": "P0529.04",
+    "Observaciones de pedido": "Pedido stock Alarsis",
+    "Estado MQ": "Finalizado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2023-04-28T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2023-03-27T00:00:00",
+    "Fecha salida MQ": null,
+    "Etiqueta": "MQ-588-PL315EST40GB-Alarsis Corte industrial, S.L.U."
   },
   {
     "KeyPedido": "MQ-593",
@@ -4755,21 +4755,6 @@
     "Etiqueta": "MQ-598-FRC316V7A32MTT40-Alarsis Corte industrial, S.L.U."
   },
   {
-    "KeyPedido": "MQ-599",
-    "FECHA": "2023-01-31T00:00:00",
-    "CLIENTE": "OZGUR YILMAZ",
-    "Máquina": "FH350V7A10MTT40",
-    "Código bastidor": "P0533.02",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2023-05-31T00:00:00",
-    "ModFecha Pentrega": "2023-04-24T00:00:00",
-    "Fecha fin Fab": "2023-05-08T00:00:00",
-    "Fecha salida MQ": "2023-05-09T00:00:00",
-    "Etiqueta": "MQ-599-FH350V7A10MTT40-OZGUR YILMAZ"
-  },
-  {
     "KeyPedido": "MQ-600",
     "FECHA": "2023-01-31T00:00:00",
     "CLIENTE": "INSECOP SOLUCIONES INTEGRALES, S.L.",
@@ -4783,6 +4768,21 @@
     "Fecha fin Fab": "2023-05-17T00:00:00",
     "Fecha salida MQ": "2023-06-07T00:00:00",
     "Etiqueta": "MQ-600-FR223D-INSECOP SOLUCIONES INTEGRALES, S.L."
+  },
+  {
+    "KeyPedido": "MQ-599",
+    "FECHA": "2023-01-31T00:00:00",
+    "CLIENTE": "OZGUR YILMAZ",
+    "Máquina": "FH350V7A10MTT40",
+    "Código bastidor": "P0533.02",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2023-05-31T00:00:00",
+    "ModFecha Pentrega": "2023-04-24T00:00:00",
+    "Fecha fin Fab": "2023-05-08T00:00:00",
+    "Fecha salida MQ": "2023-05-09T00:00:00",
+    "Etiqueta": "MQ-599-FH350V7A10MTT40-OZGUR YILMAZ"
   },
   {
     "KeyPedido": "MQ-601",
@@ -4980,19 +4980,19 @@
     "Etiqueta": "MQ-611-FRC412V7CTPT40-Alarsis Corte industrial, S.L.U."
   },
   {
-    "KeyPedido": "MQ-618",
+    "KeyPedido": "MQ-617",
     "FECHA": "2023-03-17T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
     "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0531.07",
+    "Código bastidor": "P0531.06",
     "Observaciones de pedido": null,
     "Estado MQ": "Entregado",
     "EntradaProd": null,
-    "Fecha Pentrega": "2023-05-12T00:00:00",
+    "Fecha Pentrega": "2023-05-05T00:00:00",
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2023-06-02T00:00:00",
-    "Fecha salida MQ": "2023-06-02T00:00:00",
-    "Etiqueta": "MQ-618-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
+    "Fecha fin Fab": "2023-05-25T00:00:00",
+    "Fecha salida MQ": "2023-05-26T00:00:00",
+    "Etiqueta": "MQ-617-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-614",
@@ -5055,34 +5055,34 @@
     "Etiqueta": "MQ-619-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-617",
+    "KeyPedido": "MQ-618",
     "FECHA": "2023-03-17T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
     "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0531.06",
+    "Código bastidor": "P0531.07",
     "Observaciones de pedido": null,
     "Estado MQ": "Entregado",
     "EntradaProd": null,
-    "Fecha Pentrega": "2023-05-05T00:00:00",
+    "Fecha Pentrega": "2023-05-12T00:00:00",
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2023-05-25T00:00:00",
-    "Fecha salida MQ": "2023-05-26T00:00:00",
-    "Etiqueta": "MQ-617-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
+    "Fecha fin Fab": "2023-06-02T00:00:00",
+    "Fecha salida MQ": "2023-06-02T00:00:00",
+    "Etiqueta": "MQ-618-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-621",
+    "KeyPedido": "MQ-626",
     "FECHA": "2023-03-17T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH165VSVM3T40BGVX",
-    "Código bastidor": "P0545.01",
+    "Máquina": "FRH50VSVM1M23GGVX",
+    "Código bastidor": "P0544.02",
     "Observaciones de pedido": null,
     "Estado MQ": "Entregado",
     "EntradaProd": null,
-    "Fecha Pentrega": "2023-05-29T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2023-06-01T00:00:00",
-    "Fecha salida MQ": "2023-06-02T00:00:00",
-    "Etiqueta": "MQ-621-FRH165VSVM3T40BGVX-Voxelcare, S.L."
+    "Fecha Pentrega": "2023-09-01T00:00:00",
+    "ModFecha Pentrega": "2023-10-27T00:00:00",
+    "Fecha fin Fab": "2023-10-26T00:00:00",
+    "Fecha salida MQ": "2023-11-06T00:00:00",
+    "Etiqueta": "MQ-626-FRH50VSVM1M23GGVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-625",
@@ -5145,19 +5145,19 @@
     "Etiqueta": "MQ-622-FRH50VSVM1M23GGVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-626",
+    "KeyPedido": "MQ-621",
     "FECHA": "2023-03-17T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH50VSVM1M23GGVX",
-    "Código bastidor": "P0544.02",
+    "Máquina": "FRH165VSVM3T40BGVX",
+    "Código bastidor": "P0545.01",
     "Observaciones de pedido": null,
     "Estado MQ": "Entregado",
     "EntradaProd": null,
-    "Fecha Pentrega": "2023-09-01T00:00:00",
-    "ModFecha Pentrega": "2023-10-27T00:00:00",
-    "Fecha fin Fab": "2023-10-26T00:00:00",
-    "Fecha salida MQ": "2023-11-06T00:00:00",
-    "Etiqueta": "MQ-626-FRH50VSVM1M23GGVX-Voxelcare, S.L."
+    "Fecha Pentrega": "2023-05-29T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2023-06-01T00:00:00",
+    "Fecha salida MQ": "2023-06-02T00:00:00",
+    "Etiqueta": "MQ-621-FRH165VSVM3T40BGVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-623",
@@ -5280,21 +5280,6 @@
     "Etiqueta": "MQ-629-FRH165VSVM3T40BGVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-634",
-    "FECHA": "2023-03-31T00:00:00",
-    "CLIENTE": "Ortoibérica, S.L.",
-    "Máquina": "FRH55VCM23RB",
-    "Código bastidor": "P0547.01",
-    "Observaciones de pedido": "Añadir pen drive",
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2023-06-16T00:00:00",
-    "ModFecha Pentrega": "2023-06-08T00:00:00",
-    "Fecha fin Fab": "2023-06-12T00:00:00",
-    "Fecha salida MQ": "2023-06-12T00:00:00",
-    "Etiqueta": "MQ-634-FRH55VCM23RB-Ortoibérica, S.L."
-  },
-  {
     "KeyPedido": "MQ-635",
     "FECHA": "2023-03-31T00:00:00",
     "CLIENTE": "Ortoibérica, S.L.",
@@ -5308,6 +5293,21 @@
     "Fecha fin Fab": "2023-07-10T00:00:00",
     "Fecha salida MQ": "2023-07-10T00:00:00",
     "Etiqueta": "MQ-635-FRH55VCM23RB-Ortoibérica, S.L."
+  },
+  {
+    "KeyPedido": "MQ-634",
+    "FECHA": "2023-03-31T00:00:00",
+    "CLIENTE": "Ortoibérica, S.L.",
+    "Máquina": "FRH55VCM23RB",
+    "Código bastidor": "P0547.01",
+    "Observaciones de pedido": "Añadir pen drive",
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2023-06-16T00:00:00",
+    "ModFecha Pentrega": "2023-06-08T00:00:00",
+    "Fecha fin Fab": "2023-06-12T00:00:00",
+    "Fecha salida MQ": "2023-06-12T00:00:00",
+    "Etiqueta": "MQ-634-FRH55VCM23RB-Ortoibérica, S.L."
   },
   {
     "KeyPedido": "MQ-636",
@@ -5370,21 +5370,6 @@
     "Etiqueta": "MQ-639-FRC412V7CTPT40-Climaled Solutions"
   },
   {
-    "KeyPedido": "MQ-640",
-    "FECHA": "2023-04-24T00:00:00",
-    "CLIENTE": "Plaesa SL",
-    "Máquina": "FRC250V7A5MTT40",
-    "Código bastidor": "P0500.02",
-    "Observaciones de pedido": "No poner kit de fresas, no le sirven.",
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2023-05-22T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2023-05-23T00:00:00",
-    "Fecha salida MQ": "2023-05-25T00:00:00",
-    "Etiqueta": "MQ-640-FRC250V7A5MTT40-Plaesa SL"
-  },
-  {
     "KeyPedido": "MQ-641",
     "FECHA": "2023-04-24T00:00:00",
     "CLIENTE": "Rotula tú mismo, S.L.",
@@ -5398,6 +5383,21 @@
     "Fecha fin Fab": "2023-06-22T00:00:00",
     "Fecha salida MQ": "2023-07-20T00:00:00",
     "Etiqueta": "MQ-641-FH350V10A10SET40-Rotula tú mismo, S.L."
+  },
+  {
+    "KeyPedido": "MQ-640",
+    "FECHA": "2023-04-24T00:00:00",
+    "CLIENTE": "Plaesa SL",
+    "Máquina": "FRC250V7A5MTT40",
+    "Código bastidor": "P0500.02",
+    "Observaciones de pedido": "No poner kit de fresas, no le sirven.",
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2023-05-22T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2023-05-23T00:00:00",
+    "Fecha salida MQ": "2023-05-25T00:00:00",
+    "Etiqueta": "MQ-640-FRC250V7A5MTT40-Plaesa SL"
   },
   {
     "KeyPedido": "MQ-642",
@@ -5640,21 +5640,6 @@
     "Etiqueta": "MQ-657-FH250V7A5T40-Troqueles y Fotograbados Bonet, S.L.U."
   },
   {
-    "KeyPedido": "MQ-659",
-    "FECHA": "2023-06-14T00:00:00",
-    "CLIENTE": "Ortoibérica, S.L.",
-    "Máquina": "FRH55VCM23RB",
-    "Código bastidor": "P0556.02",
-    "Observaciones de pedido": "pedido nº 24047",
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2023-09-27T00:00:00",
-    "ModFecha Pentrega": "2023-11-06T00:00:00",
-    "Fecha fin Fab": "2023-11-16T00:00:00",
-    "Fecha salida MQ": "2023-11-27T00:00:00",
-    "Etiqueta": "MQ-659-FRH55VCM23RB-Ortoibérica, S.L."
-  },
-  {
     "KeyPedido": "MQ-658",
     "FECHA": "2023-06-14T00:00:00",
     "CLIENTE": "Ortoibérica, S.L.",
@@ -5668,6 +5653,21 @@
     "Fecha fin Fab": "2023-10-19T00:00:00",
     "Fecha salida MQ": "2023-10-19T00:00:00",
     "Etiqueta": "MQ-658-FRH55VCM23RB-Ortoibérica, S.L."
+  },
+  {
+    "KeyPedido": "MQ-659",
+    "FECHA": "2023-06-14T00:00:00",
+    "CLIENTE": "Ortoibérica, S.L.",
+    "Máquina": "FRH55VCM23RB",
+    "Código bastidor": "P0556.02",
+    "Observaciones de pedido": "pedido nº 24047",
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2023-09-27T00:00:00",
+    "ModFecha Pentrega": "2023-11-06T00:00:00",
+    "Fecha fin Fab": "2023-11-16T00:00:00",
+    "Fecha salida MQ": "2023-11-27T00:00:00",
+    "Etiqueta": "MQ-659-FRH55VCM23RB-Ortoibérica, S.L."
   },
   {
     "KeyPedido": "MQ-662",
@@ -5775,21 +5775,6 @@
     "Etiqueta": "MQ-666-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-667",
-    "FECHA": "2023-07-13T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0560.04",
-    "Observaciones de pedido": "Pedido 3449630",
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": "2024-01-26T00:00:00",
-    "ModFecha Pentrega": "2024-03-01T00:00:00",
-    "Fecha fin Fab": "2024-03-14T00:00:00",
-    "Fecha salida MQ": "2024-03-26T00:00:00",
-    "Etiqueta": "MQ-667-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
-  },
-  {
     "KeyPedido": "MQ-668",
     "FECHA": "2023-07-13T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
@@ -5848,6 +5833,21 @@
     "Fecha fin Fab": "2024-01-02T00:00:00",
     "Fecha salida MQ": "2024-01-03T00:00:00",
     "Etiqueta": "MQ-671-FRH165VSVM3T40BGVX-Voxelcare, S.L."
+  },
+  {
+    "KeyPedido": "MQ-667",
+    "FECHA": "2023-07-13T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH70VCSVM1M23GBVX",
+    "Código bastidor": "P0560.04",
+    "Observaciones de pedido": "Pedido 3449630",
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": "2024-01-26T00:00:00",
+    "ModFecha Pentrega": "2024-03-01T00:00:00",
+    "Fecha fin Fab": "2024-03-14T00:00:00",
+    "Fecha salida MQ": "2024-03-26T00:00:00",
+    "Etiqueta": "MQ-667-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-672",
@@ -6240,6 +6240,36 @@
     "Etiqueta": "MQ-697-PL315ET40GB-Tofer AVG, S.L."
   },
   {
+    "KeyPedido": "MQ-704",
+    "FECHA": "2023-10-30T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH70VCSVM1M23GBVX",
+    "Código bastidor": "P0560.08",
+    "Observaciones de pedido": "Pedido 3449630",
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2024-04-22T00:00:00",
+    "Fecha Pentrega": "2024-03-15T00:00:00",
+    "ModFecha Pentrega": "2024-05-10T00:00:00",
+    "Fecha fin Fab": "2024-05-16T00:00:00",
+    "Fecha salida MQ": "2024-05-27T00:00:00",
+    "Etiqueta": "MQ-704-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
+  },
+  {
+    "KeyPedido": "MQ-708",
+    "FECHA": "2023-10-30T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH70VCSVM1M23GBVX",
+    "Código bastidor": "P0574.02",
+    "Observaciones de pedido": "Pedido 3449630",
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2024-06-24T00:00:00",
+    "Fecha Pentrega": "2024-04-19T00:00:00",
+    "ModFecha Pentrega": "2024-09-13T00:00:00",
+    "Fecha fin Fab": "2024-10-14T00:00:00",
+    "Fecha salida MQ": "2024-10-14T00:00:00",
+    "Etiqueta": "MQ-708-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
+  },
+  {
     "KeyPedido": "MQ-720",
     "FECHA": "2023-10-30T00:00:00",
     "CLIENTE": "ALP INTERNATIONAL S.R.L.",
@@ -6270,34 +6300,49 @@
     "Etiqueta": "MQ-719-FRC412V7CTPT40UB-ALP INTERNATIONAL S.R.L."
   },
   {
-    "KeyPedido": "MQ-710",
+    "KeyPedido": "MQ-707",
     "FECHA": "2023-10-30T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
     "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0574.03",
+    "Código bastidor": "P0574.01",
     "Observaciones de pedido": "Pedido 3449630",
     "Estado MQ": "Entregado",
-    "EntradaProd": "2024-09-09T00:00:00",
-    "Fecha Pentrega": "2024-12-31T00:00:00",
-    "ModFecha Pentrega": "2024-09-27T00:00:00",
-    "Fecha fin Fab": "2024-11-22T00:00:00",
-    "Fecha salida MQ": "2024-11-25T00:00:00",
-    "Etiqueta": "MQ-710-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
+    "EntradaProd": "2024-05-20T00:00:00",
+    "Fecha Pentrega": "2024-04-12T00:00:00",
+    "ModFecha Pentrega": "2024-09-06T00:00:00",
+    "Fecha fin Fab": "2024-09-25T00:00:00",
+    "Fecha salida MQ": "2024-09-25T00:00:00",
+    "Etiqueta": "MQ-707-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-717",
+    "KeyPedido": "MQ-718",
+    "FECHA": "2023-10-30T00:00:00",
+    "CLIENTE": "ALP INTERNATIONAL S.R.L.",
+    "Máquina": "FRC412V7CTPT40UB",
+    "Código bastidor": "P0572.01",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2024-01-08T00:00:00",
+    "Fecha Pentrega": "2024-02-05T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2024-02-06T00:00:00",
+    "Fecha salida MQ": "2024-02-07T00:00:00",
+    "Etiqueta": "MQ-718-FRC412V7CTPT40UB-ALP INTERNATIONAL S.R.L."
+  },
+  {
+    "KeyPedido": "MQ-709",
     "FECHA": "2023-10-30T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
     "Máquina": "FRH165VSVM3T40BGVX",
     "Código bastidor": null,
     "Observaciones de pedido": "Pedido 3449630-PEDIDO ANULADO POR VOXELCARE",
     "Estado MQ": "ANULADO",
-    "EntradaProd": "2024-11-11T00:00:00",
-    "Fecha Pentrega": "2024-12-31T00:00:00",
-    "ModFecha Pentrega": "2024-11-29T00:00:00",
+    "EntradaProd": "2024-07-01T00:00:00",
+    "Fecha Pentrega": "2024-04-26T00:00:00",
+    "ModFecha Pentrega": "2024-07-19T00:00:00",
     "Fecha fin Fab": null,
     "Fecha salida MQ": null,
-    "Etiqueta": "MQ-717-FRH165VSVM3T40BGVX-Voxelcare, S.L."
+    "Etiqueta": "MQ-709-FRH165VSVM3T40BGVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-716",
@@ -6330,6 +6375,21 @@
     "Etiqueta": "MQ-715-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
+    "KeyPedido": "MQ-705",
+    "FECHA": "2023-10-30T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH165VSVM3T22BGVX",
+    "Código bastidor": "P0575.01",
+    "Observaciones de pedido": "Pedido 3449630",
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2024-06-17T00:00:00",
+    "Fecha Pentrega": "2024-03-22T00:00:00",
+    "ModFecha Pentrega": "2024-07-12T00:00:00",
+    "Fecha fin Fab": "2024-07-12T00:00:00",
+    "Fecha salida MQ": "2024-07-16T00:00:00",
+    "Etiqueta": "MQ-705-FRH165VSVM3T22BGVX-Voxelcare, S.L."
+  },
+  {
     "KeyPedido": "MQ-714",
     "FECHA": "2023-10-30T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
@@ -6345,19 +6405,49 @@
     "Etiqueta": "MQ-714-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-713",
+    "KeyPedido": "MQ-712",
+    "FECHA": "2023-10-30T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH165VSVM3T40BGVX",
+    "Código bastidor": null,
+    "Observaciones de pedido": "Pedido 3449630-PEDIDO ANULADO POR VOXELCARE",
+    "Estado MQ": "ANULADO",
+    "EntradaProd": "2024-07-08T00:00:00",
+    "Fecha Pentrega": "2024-05-17T00:00:00",
+    "ModFecha Pentrega": "2024-07-26T00:00:00",
+    "Fecha fin Fab": null,
+    "Fecha salida MQ": null,
+    "Etiqueta": "MQ-712-FRH165VSVM3T40BGVX-Voxelcare, S.L."
+  },
+  {
+    "KeyPedido": "MQ-706",
     "FECHA": "2023-10-30T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
     "Máquina": "FRH50VSVM1M23GGVX",
-    "Código bastidor": "P0576.01",
+    "Código bastidor": "P0544.04",
     "Observaciones de pedido": null,
     "Estado MQ": "Entregado",
-    "EntradaProd": "2024-06-03T00:00:00",
-    "Fecha Pentrega": "2024-05-31T00:00:00",
-    "ModFecha Pentrega": "2024-05-17T00:00:00",
-    "Fecha fin Fab": "2024-06-14T00:00:00",
-    "Fecha salida MQ": "2024-06-18T00:00:00",
-    "Etiqueta": "MQ-713-FRH50VSVM1M23GGVX-Voxelcare, S.L."
+    "EntradaProd": "2024-03-18T00:00:00",
+    "Fecha Pentrega": "2024-04-05T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2024-04-05T00:00:00",
+    "Fecha salida MQ": "2024-04-09T00:00:00",
+    "Etiqueta": "MQ-706-FRH50VSVM1M23GGVX-Voxelcare, S.L."
+  },
+  {
+    "KeyPedido": "MQ-711",
+    "FECHA": "2023-10-30T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH70VCSVM1M23GBVX",
+    "Código bastidor": "P0574.04",
+    "Observaciones de pedido": "Pedido 3449630",
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2024-09-30T00:00:00",
+    "Fecha Pentrega": "2024-12-31T00:00:00",
+    "ModFecha Pentrega": "2024-10-18T00:00:00",
+    "Fecha fin Fab": "2024-11-21T00:00:00",
+    "Fecha salida MQ": "2024-11-27T00:00:00",
+    "Etiqueta": "MQ-711-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-698",
@@ -6450,139 +6540,49 @@
     "Etiqueta": "MQ-703-FRH165VSVM3T40BGVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-704",
-    "FECHA": "2023-10-30T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0560.08",
-    "Observaciones de pedido": "Pedido 3449630",
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2024-04-22T00:00:00",
-    "Fecha Pentrega": "2024-03-15T00:00:00",
-    "ModFecha Pentrega": "2024-05-10T00:00:00",
-    "Fecha fin Fab": "2024-05-16T00:00:00",
-    "Fecha salida MQ": "2024-05-27T00:00:00",
-    "Etiqueta": "MQ-704-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-705",
-    "FECHA": "2023-10-30T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH165VSVM3T22BGVX",
-    "Código bastidor": "P0575.01",
-    "Observaciones de pedido": "Pedido 3449630",
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2024-06-17T00:00:00",
-    "Fecha Pentrega": "2024-03-22T00:00:00",
-    "ModFecha Pentrega": "2024-07-12T00:00:00",
-    "Fecha fin Fab": "2024-07-12T00:00:00",
-    "Fecha salida MQ": "2024-07-16T00:00:00",
-    "Etiqueta": "MQ-705-FRH165VSVM3T22BGVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-706",
+    "KeyPedido": "MQ-713",
     "FECHA": "2023-10-30T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
     "Máquina": "FRH50VSVM1M23GGVX",
-    "Código bastidor": "P0544.04",
+    "Código bastidor": "P0576.01",
     "Observaciones de pedido": null,
     "Estado MQ": "Entregado",
-    "EntradaProd": "2024-03-18T00:00:00",
-    "Fecha Pentrega": "2024-04-05T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2024-04-05T00:00:00",
-    "Fecha salida MQ": "2024-04-09T00:00:00",
-    "Etiqueta": "MQ-706-FRH50VSVM1M23GGVX-Voxelcare, S.L."
+    "EntradaProd": "2024-06-03T00:00:00",
+    "Fecha Pentrega": "2024-05-31T00:00:00",
+    "ModFecha Pentrega": "2024-05-17T00:00:00",
+    "Fecha fin Fab": "2024-06-14T00:00:00",
+    "Fecha salida MQ": "2024-06-18T00:00:00",
+    "Etiqueta": "MQ-713-FRH50VSVM1M23GGVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-707",
-    "FECHA": "2023-10-30T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0574.01",
-    "Observaciones de pedido": "Pedido 3449630",
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2024-05-20T00:00:00",
-    "Fecha Pentrega": "2024-04-12T00:00:00",
-    "ModFecha Pentrega": "2024-09-06T00:00:00",
-    "Fecha fin Fab": "2024-09-25T00:00:00",
-    "Fecha salida MQ": "2024-09-25T00:00:00",
-    "Etiqueta": "MQ-707-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-708",
-    "FECHA": "2023-10-30T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0574.02",
-    "Observaciones de pedido": "Pedido 3449630",
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2024-06-24T00:00:00",
-    "Fecha Pentrega": "2024-04-19T00:00:00",
-    "ModFecha Pentrega": "2024-09-13T00:00:00",
-    "Fecha fin Fab": "2024-10-14T00:00:00",
-    "Fecha salida MQ": "2024-10-14T00:00:00",
-    "Etiqueta": "MQ-708-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-709",
+    "KeyPedido": "MQ-717",
     "FECHA": "2023-10-30T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
     "Máquina": "FRH165VSVM3T40BGVX",
     "Código bastidor": null,
     "Observaciones de pedido": "Pedido 3449630-PEDIDO ANULADO POR VOXELCARE",
     "Estado MQ": "ANULADO",
-    "EntradaProd": "2024-07-01T00:00:00",
-    "Fecha Pentrega": "2024-04-26T00:00:00",
-    "ModFecha Pentrega": "2024-07-19T00:00:00",
-    "Fecha fin Fab": null,
-    "Fecha salida MQ": null,
-    "Etiqueta": "MQ-709-FRH165VSVM3T40BGVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-712",
-    "FECHA": "2023-10-30T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH165VSVM3T40BGVX",
-    "Código bastidor": null,
-    "Observaciones de pedido": "Pedido 3449630-PEDIDO ANULADO POR VOXELCARE",
-    "Estado MQ": "ANULADO",
-    "EntradaProd": "2024-07-08T00:00:00",
-    "Fecha Pentrega": "2024-05-17T00:00:00",
-    "ModFecha Pentrega": "2024-07-26T00:00:00",
-    "Fecha fin Fab": null,
-    "Fecha salida MQ": null,
-    "Etiqueta": "MQ-712-FRH165VSVM3T40BGVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-718",
-    "FECHA": "2023-10-30T00:00:00",
-    "CLIENTE": "ALP INTERNATIONAL S.R.L.",
-    "Máquina": "FRC412V7CTPT40UB",
-    "Código bastidor": "P0572.01",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2024-01-08T00:00:00",
-    "Fecha Pentrega": "2024-02-05T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2024-02-06T00:00:00",
-    "Fecha salida MQ": "2024-02-07T00:00:00",
-    "Etiqueta": "MQ-718-FRC412V7CTPT40UB-ALP INTERNATIONAL S.R.L."
-  },
-  {
-    "KeyPedido": "MQ-711",
-    "FECHA": "2023-10-30T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0574.04",
-    "Observaciones de pedido": "Pedido 3449630",
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2024-09-30T00:00:00",
+    "EntradaProd": "2024-11-11T00:00:00",
     "Fecha Pentrega": "2024-12-31T00:00:00",
-    "ModFecha Pentrega": "2024-10-18T00:00:00",
-    "Fecha fin Fab": "2024-11-21T00:00:00",
-    "Fecha salida MQ": "2024-11-27T00:00:00",
-    "Etiqueta": "MQ-711-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
+    "ModFecha Pentrega": "2024-11-29T00:00:00",
+    "Fecha fin Fab": null,
+    "Fecha salida MQ": null,
+    "Etiqueta": "MQ-717-FRH165VSVM3T40BGVX-Voxelcare, S.L."
+  },
+  {
+    "KeyPedido": "MQ-710",
+    "FECHA": "2023-10-30T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH70VCSVM1M23GBVX",
+    "Código bastidor": "P0574.03",
+    "Observaciones de pedido": "Pedido 3449630",
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2024-09-09T00:00:00",
+    "Fecha Pentrega": "2024-12-31T00:00:00",
+    "ModFecha Pentrega": "2024-09-27T00:00:00",
+    "Fecha fin Fab": "2024-11-22T00:00:00",
+    "Fecha salida MQ": "2024-11-25T00:00:00",
+    "Etiqueta": "MQ-710-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-721",
@@ -7455,19 +7455,19 @@
     "Etiqueta": "MQ-782-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-783",
+    "KeyPedido": "MQ-784",
     "FECHA": "2024-05-09T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": null,
-    "Observaciones de pedido": "Pedido 3449630-PEDIDO ANULADO POR VOXELCARE",
-    "Estado MQ": "ANULADO",
-    "EntradaProd": "2024-10-14T00:00:00",
-    "Fecha Pentrega": "2024-11-08T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": null,
-    "Fecha salida MQ": null,
-    "Etiqueta": "MQ-783-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
+    "CLIENTE": "Forsthuber Maschinen und Werkzeuge GmbH",
+    "Máquina": "PL315EST40GZ",
+    "Código bastidor": "P0570.03",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2024-07-29T00:00:00",
+    "Fecha Pentrega": "2024-08-02T00:00:00",
+    "ModFecha Pentrega": "2024-09-18T00:00:00",
+    "Fecha fin Fab": "2024-09-26T00:00:00",
+    "Fecha salida MQ": "2025-01-20T00:00:00",
+    "Etiqueta": "MQ-784-PL315EST40GZ-Forsthuber Maschinen und Werkzeuge GmbH"
   },
   {
     "KeyPedido": "MQ-781",
@@ -7530,19 +7530,19 @@
     "Etiqueta": "MQ-778-FRH50VSVM1M23GGVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-784",
+    "KeyPedido": "MQ-783",
     "FECHA": "2024-05-09T00:00:00",
-    "CLIENTE": "Forsthuber Maschinen und Werkzeuge GmbH",
-    "Máquina": "PL315EST40GZ",
-    "Código bastidor": "P0570.03",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2024-07-29T00:00:00",
-    "Fecha Pentrega": "2024-08-02T00:00:00",
-    "ModFecha Pentrega": "2024-09-18T00:00:00",
-    "Fecha fin Fab": "2024-09-26T00:00:00",
-    "Fecha salida MQ": "2025-01-20T00:00:00",
-    "Etiqueta": "MQ-784-PL315EST40GZ-Forsthuber Maschinen und Werkzeuge GmbH"
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH70VCSVM1M23GBVX",
+    "Código bastidor": null,
+    "Observaciones de pedido": "Pedido 3449630-PEDIDO ANULADO POR VOXELCARE",
+    "Estado MQ": "ANULADO",
+    "EntradaProd": "2024-10-14T00:00:00",
+    "Fecha Pentrega": "2024-11-08T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": null,
+    "Fecha salida MQ": null,
+    "Etiqueta": "MQ-783-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-785",
@@ -7890,21 +7890,6 @@
     "Etiqueta": "MQ-807-CRT212L-INDIMCO Indústria de Impressão e Corte"
   },
   {
-    "KeyPedido": "MQ-808",
-    "FECHA": "2024-07-30T00:00:00",
-    "CLIENTE": "Grafibaleares 2007, S.L. Graficon",
-    "Máquina": "FRC350V7M5MTT40",
-    "Código bastidor": "P0532.08",
-    "Observaciones de pedido": "IMPORTANTE: CLIENTE PIDE BOMBA DE VACIO EXTERNA",
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2024-11-08T00:00:00",
-    "Fecha Pentrega": "2024-11-12T00:00:00",
-    "ModFecha Pentrega": "2024-12-03T00:00:00",
-    "Fecha fin Fab": "2024-11-27T00:00:00",
-    "Fecha salida MQ": "2024-11-29T00:00:00",
-    "Etiqueta": "MQ-808-FRC350V7M5MTT40-Grafibaleares 2007, S.L. Graficon"
-  },
-  {
     "KeyPedido": "MQ-810",
     "FECHA": "2024-07-30T00:00:00",
     "CLIENTE": "Grafibaleares 2007, S.L. Graficon",
@@ -7933,6 +7918,21 @@
     "Fecha fin Fab": "2024-12-13T00:00:00",
     "Fecha salida MQ": "2024-12-13T00:00:00",
     "Etiqueta": "MQ-809-FRH350V7A3MTT40-Grafibaleares 2007, S.L. Graficon"
+  },
+  {
+    "KeyPedido": "MQ-808",
+    "FECHA": "2024-07-30T00:00:00",
+    "CLIENTE": "Grafibaleares 2007, S.L. Graficon",
+    "Máquina": "FRC350V7M5MTT40",
+    "Código bastidor": "P0532.08",
+    "Observaciones de pedido": "IMPORTANTE: CLIENTE PIDE BOMBA DE VACIO EXTERNA",
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2024-11-08T00:00:00",
+    "Fecha Pentrega": "2024-11-12T00:00:00",
+    "ModFecha Pentrega": "2024-12-03T00:00:00",
+    "Fecha fin Fab": "2024-11-27T00:00:00",
+    "Fecha salida MQ": "2024-11-29T00:00:00",
+    "Etiqueta": "MQ-808-FRC350V7M5MTT40-Grafibaleares 2007, S.L. Graficon"
   },
   {
     "KeyPedido": "MQ-811",
@@ -8340,21 +8340,6 @@
     "Etiqueta": "MQ-836-FRH50VSVM1M23GGVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-837",
-    "FECHA": "2024-12-10T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH165VSVM3T40BGVX",
-    "Código bastidor": "P0575.02",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2025-02-14T00:00:00",
-    "Fecha Pentrega": "2025-02-28T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2025-03-05T00:00:00",
-    "Fecha salida MQ": "2025-03-10T00:00:00",
-    "Etiqueta": "MQ-837-FRH165VSVM3T40BGVX-Voxelcare, S.L."
-  },
-  {
     "KeyPedido": "MQ-842",
     "FECHA": "2024-12-10T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
@@ -8368,6 +8353,21 @@
     "Fecha fin Fab": "2025-04-16T00:00:00",
     "Fecha salida MQ": "2025-06-10T00:00:00",
     "Etiqueta": "MQ-842-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
+  },
+  {
+    "KeyPedido": "MQ-838",
+    "FECHA": "2024-12-10T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH165VSVM3T40BGVX",
+    "Código bastidor": "P0575.03",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2025-02-28T00:00:00",
+    "Fecha Pentrega": "2025-03-14T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2025-03-10T00:00:00",
+    "Fecha salida MQ": "2025-03-18T00:00:00",
+    "Etiqueta": "MQ-838-FRH165VSVM3T40BGVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-839",
@@ -8400,19 +8400,19 @@
     "Etiqueta": "MQ-840-FRH166VSVM3T40BGVX-Voxelcare, S.L."
   },
   {
-    "KeyPedido": "MQ-838",
+    "KeyPedido": "MQ-837",
     "FECHA": "2024-12-10T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
     "Máquina": "FRH165VSVM3T40BGVX",
-    "Código bastidor": "P0575.03",
+    "Código bastidor": "P0575.02",
     "Observaciones de pedido": null,
     "Estado MQ": "Entregado",
-    "EntradaProd": "2025-02-28T00:00:00",
-    "Fecha Pentrega": "2025-03-14T00:00:00",
+    "EntradaProd": "2025-02-14T00:00:00",
+    "Fecha Pentrega": "2025-02-28T00:00:00",
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2025-03-10T00:00:00",
-    "Fecha salida MQ": "2025-03-18T00:00:00",
-    "Etiqueta": "MQ-838-FRH165VSVM3T40BGVX-Voxelcare, S.L."
+    "Fecha fin Fab": "2025-03-05T00:00:00",
+    "Fecha salida MQ": "2025-03-10T00:00:00",
+    "Etiqueta": "MQ-837-FRH165VSVM3T40BGVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-843",
@@ -8715,21 +8715,6 @@
     "Etiqueta": "MQ-862-FRH350V7M3T40-Rotulpin Rotulación, S.L."
   },
   {
-    "KeyPedido": "MQ-863",
-    "FECHA": "2025-03-04T00:00:00",
-    "CLIENTE": "Ortoibérica, S.L.",
-    "Máquina": "FVT100M3SVT40BR",
-    "Código bastidor": "P0638.00",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2025-05-16T00:00:00",
-    "Fecha Pentrega": "2025-05-27T00:00:00",
-    "ModFecha Pentrega": "2025-06-11T00:00:00",
-    "Fecha fin Fab": "2025-06-06T00:00:00",
-    "Fecha salida MQ": "2025-06-16T00:00:00",
-    "Etiqueta": "MQ-863-FVT100M3SVT40BR-Ortoibérica, S.L."
-  },
-  {
     "KeyPedido": "MQ-865",
     "FECHA": "2025-03-04T00:00:00",
     "CLIENTE": "INDIMCO Indústria de Impressão e Corte",
@@ -8758,6 +8743,21 @@
     "Fecha fin Fab": "2025-05-23T00:00:00",
     "Fecha salida MQ": "2025-05-30T00:00:00",
     "Etiqueta": "MQ-864-FRC416V7CTPMTPNT40-Aislamientos Navia, S.L."
+  },
+  {
+    "KeyPedido": "MQ-863",
+    "FECHA": "2025-03-04T00:00:00",
+    "CLIENTE": "Ortoibérica, S.L.",
+    "Máquina": "FVT100M3SVT40BR",
+    "Código bastidor": "P0638.00",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2025-05-16T00:00:00",
+    "Fecha Pentrega": "2025-05-27T00:00:00",
+    "ModFecha Pentrega": "2025-06-11T00:00:00",
+    "Fecha fin Fab": "2025-06-06T00:00:00",
+    "Fecha salida MQ": "2025-06-16T00:00:00",
+    "Etiqueta": "MQ-863-FVT100M3SVT40BR-Ortoibérica, S.L."
   },
   {
     "KeyPedido": "MQ-866",
@@ -8820,19 +8820,34 @@
     "Etiqueta": "MQ-869-FRC412V7CTPT40-Clima de La Ribera, S.L."
   },
   {
-    "KeyPedido": "MQ-874",
+    "KeyPedido": "MQ-875",
+    "FECHA": "2025-03-20T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH50VSVM1M23GGVX",
+    "Código bastidor": "P0601.04",
+    "Observaciones de pedido": "Pospuesta por Voxelcare entrega a semana 5 del 2026",
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2025-10-09T00:00:00",
+    "Fecha Pentrega": "2025-11-06T00:00:00",
+    "ModFecha Pentrega": "2026-01-30T00:00:00",
+    "Fecha fin Fab": "2025-04-24T00:00:00",
+    "Fecha salida MQ": "2026-01-26T00:00:00",
+    "Etiqueta": "MQ-875-FRH50VSVM1M23GGVX-Voxelcare, S.L."
+  },
+  {
+    "KeyPedido": "MQ-872",
     "FECHA": "2025-03-20T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
     "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0641.04",
-    "Observaciones de pedido": "ANULADO POR VOXELCARE 12-05-2025",
-    "Estado MQ": "ANULADO",
-    "EntradaProd": "2025-09-19T00:00:00",
-    "Fecha Pentrega": "2025-10-15T00:00:00",
+    "Código bastidor": "P0641.02",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2025-07-25T00:00:00",
+    "Fecha Pentrega": "2025-08-27T00:00:00",
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": null,
-    "Fecha salida MQ": null,
-    "Etiqueta": "MQ-874-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
+    "Fecha fin Fab": "2025-08-01T00:00:00",
+    "Fecha salida MQ": "2025-09-01T00:00:00",
+    "Etiqueta": "MQ-872-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-871",
@@ -8848,36 +8863,6 @@
     "Fecha fin Fab": "2025-07-28T00:00:00",
     "Fecha salida MQ": "2025-08-04T00:00:00",
     "Etiqueta": "MQ-871-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-870",
-    "FECHA": "2025-03-20T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH50VSVM1M23GGVX",
-    "Código bastidor": "P0601.03",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2025-06-27T00:00:00",
-    "Fecha Pentrega": "2025-07-25T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2025-04-24T00:00:00",
-    "Fecha salida MQ": "2025-07-24T00:00:00",
-    "Etiqueta": "MQ-870-FRH50VSVM1M23GGVX-Voxelcare, S.L."
-  },
-  {
-    "KeyPedido": "MQ-875",
-    "FECHA": "2025-03-20T00:00:00",
-    "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH50VSVM1M23GGVX",
-    "Código bastidor": "P0601.04",
-    "Observaciones de pedido": "Pospuesta por Voxelcare entrega a semana 5 del 2026",
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2025-10-09T00:00:00",
-    "Fecha Pentrega": "2025-11-06T00:00:00",
-    "ModFecha Pentrega": "2026-01-30T00:00:00",
-    "Fecha fin Fab": "2025-04-24T00:00:00",
-    "Fecha salida MQ": "2026-01-26T00:00:00",
-    "Etiqueta": "MQ-875-FRH50VSVM1M23GGVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-876",
@@ -8910,19 +8895,19 @@
     "Etiqueta": "MQ-877-CRT212L-Bidico, S.L."
   },
   {
-    "KeyPedido": "MQ-872",
+    "KeyPedido": "MQ-870",
     "FECHA": "2025-03-20T00:00:00",
     "CLIENTE": "Voxelcare, S.L.",
-    "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0641.02",
+    "Máquina": "FRH50VSVM1M23GGVX",
+    "Código bastidor": "P0601.03",
     "Observaciones de pedido": null,
     "Estado MQ": "Entregado",
-    "EntradaProd": "2025-07-25T00:00:00",
-    "Fecha Pentrega": "2025-08-27T00:00:00",
+    "EntradaProd": "2025-06-27T00:00:00",
+    "Fecha Pentrega": "2025-07-25T00:00:00",
     "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2025-08-01T00:00:00",
-    "Fecha salida MQ": "2025-09-01T00:00:00",
-    "Etiqueta": "MQ-872-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
+    "Fecha fin Fab": "2025-04-24T00:00:00",
+    "Fecha salida MQ": "2025-07-24T00:00:00",
+    "Etiqueta": "MQ-870-FRH50VSVM1M23GGVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-873",
@@ -8938,6 +8923,21 @@
     "Fecha fin Fab": null,
     "Fecha salida MQ": "2025-09-16T00:00:00",
     "Etiqueta": "MQ-873-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
+  },
+  {
+    "KeyPedido": "MQ-874",
+    "FECHA": "2025-03-20T00:00:00",
+    "CLIENTE": "Voxelcare, S.L.",
+    "Máquina": "FRH70VCSVM1M23GBVX",
+    "Código bastidor": "P0641.04",
+    "Observaciones de pedido": "ANULADO POR VOXELCARE 12-05-2025",
+    "Estado MQ": "ANULADO",
+    "EntradaProd": "2025-09-19T00:00:00",
+    "Fecha Pentrega": "2025-10-15T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": null,
+    "Fecha salida MQ": null,
+    "Etiqueta": "MQ-874-FRH70VCSVM1M23GBVX-Voxelcare, S.L."
   },
   {
     "KeyPedido": "MQ-878",
@@ -9060,21 +9060,6 @@
     "Etiqueta": "MQ-887-FR250ALM1M23-Grafibaleares 2007, S.L. Graficon"
   },
   {
-    "KeyPedido": "MQ-885",
-    "FECHA": "2025-05-09T00:00:00",
-    "CLIENTE": "Equymelt, S.L.",
-    "Máquina": "PLT220D",
-    "Código bastidor": "P0650.00",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2025-08-29T00:00:00",
-    "Fecha Pentrega": "2025-07-18T00:00:00",
-    "ModFecha Pentrega": "2025-07-28T00:00:00",
-    "Fecha fin Fab": "2025-11-03T00:00:00",
-    "Fecha salida MQ": "2025-11-21T00:00:00",
-    "Etiqueta": "MQ-885-PLT220D-Equymelt, S.L."
-  },
-  {
     "KeyPedido": "MQ-886",
     "FECHA": "2025-05-09T00:00:00",
     "CLIENTE": "EP Elements",
@@ -9088,6 +9073,21 @@
     "Fecha fin Fab": "2025-05-20T00:00:00",
     "Fecha salida MQ": "2025-05-23T00:00:00",
     "Etiqueta": "MQ-886-CRT220-EP Elements"
+  },
+  {
+    "KeyPedido": "MQ-885",
+    "FECHA": "2025-05-09T00:00:00",
+    "CLIENTE": "Equymelt, S.L.",
+    "Máquina": "PLT220D",
+    "Código bastidor": "P0650.00",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2025-08-29T00:00:00",
+    "Fecha Pentrega": "2025-07-18T00:00:00",
+    "ModFecha Pentrega": "2025-07-28T00:00:00",
+    "Fecha fin Fab": "2025-11-03T00:00:00",
+    "Fecha salida MQ": "2025-11-21T00:00:00",
+    "Etiqueta": "MQ-885-PLT220D-Equymelt, S.L."
   },
   {
     "KeyPedido": "MQ-888",
@@ -9165,6 +9165,21 @@
     "Etiqueta": "MQ-892-FR223D-RADIO-TELEVISION INDALO, S.L."
   },
   {
+    "KeyPedido": "MQ-895",
+    "FECHA": "2025-05-27T00:00:00",
+    "CLIENTE": "CROSS MONKEY, S.L.",
+    "Máquina": "FR223D",
+    "Código bastidor": "P0647.02",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2025-06-27T00:00:00",
+    "Fecha Pentrega": "2025-09-19T00:00:00",
+    "ModFecha Pentrega": "2025-07-25T00:00:00",
+    "Fecha fin Fab": "2025-07-17T00:00:00",
+    "Fecha salida MQ": "2025-07-22T00:00:00",
+    "Etiqueta": "MQ-895-FR223D-CROSS MONKEY, S.L."
+  },
+  {
     "KeyPedido": "MQ-894",
     "FECHA": "2025-05-27T00:00:00",
     "CLIENTE": "Alarsis Corte industrial, S.L.U.",
@@ -9193,21 +9208,6 @@
     "Fecha fin Fab": "2025-09-04T00:00:00",
     "Fecha salida MQ": "2025-09-09T00:00:00",
     "Etiqueta": "MQ-893-FH450EV10A10T40-Fom Romania Srl"
-  },
-  {
-    "KeyPedido": "MQ-895",
-    "FECHA": "2025-05-27T00:00:00",
-    "CLIENTE": "CROSS MONKEY, S.L.",
-    "Máquina": "FR223D",
-    "Código bastidor": "P0647.02",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2025-06-27T00:00:00",
-    "Fecha Pentrega": "2025-09-19T00:00:00",
-    "ModFecha Pentrega": "2025-07-25T00:00:00",
-    "Fecha fin Fab": "2025-07-17T00:00:00",
-    "Fecha salida MQ": "2025-07-22T00:00:00",
-    "Etiqueta": "MQ-895-FR223D-CROSS MONKEY, S.L."
   },
   {
     "KeyPedido": "MQ-896",
@@ -9300,36 +9300,6 @@
     "Etiqueta": "MQ-905-CRT212L-Alarsis Corte industrial, S.L.U."
   },
   {
-    "KeyPedido": "MQ-904",
-    "FECHA": "2025-06-16T00:00:00",
-    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
-    "Máquina": "PL315ET40GB",
-    "Código bastidor": null,
-    "Observaciones de pedido": "P0570.04. Este pedido se ha consumido en MQ950 añadiéndole sectores.",
-    "Estado MQ": "Finalizado",
-    "EntradaProd": "2025-06-23T00:00:00",
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2025-07-02T00:00:00",
-    "Fecha salida MQ": null,
-    "Etiqueta": "MQ-904-PL315ET40GB-Alarsis Corte industrial, S.L.U."
-  },
-  {
-    "KeyPedido": "MQ-903",
-    "FECHA": "2025-06-16T00:00:00",
-    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
-    "Máquina": "FRC412V7CTPT40",
-    "Código bastidor": "P0633.02",
-    "Observaciones de pedido": "ALARSIS STOCK",
-    "Estado MQ": "Finalizado",
-    "EntradaProd": "2025-06-18T00:00:00",
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2025-09-24T00:00:00",
-    "Fecha salida MQ": null,
-    "Etiqueta": "MQ-903-FRC412V7CTPT40-Alarsis Corte industrial, S.L.U."
-  },
-  {
     "KeyPedido": "MQ-902",
     "FECHA": "2025-06-16T00:00:00",
     "CLIENTE": "Alarsis Corte industrial, S.L.U.",
@@ -9358,6 +9328,36 @@
     "Fecha fin Fab": "2025-08-01T00:00:00",
     "Fecha salida MQ": null,
     "Etiqueta": "MQ-901-FR223D-Alarsis Corte industrial, S.L.U."
+  },
+  {
+    "KeyPedido": "MQ-904",
+    "FECHA": "2025-06-16T00:00:00",
+    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
+    "Máquina": "PL315ET40GB",
+    "Código bastidor": null,
+    "Observaciones de pedido": "P0570.04. Este pedido se ha consumido en MQ950 añadiéndole sectores.",
+    "Estado MQ": "Finalizado",
+    "EntradaProd": "2025-06-23T00:00:00",
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2025-07-02T00:00:00",
+    "Fecha salida MQ": null,
+    "Etiqueta": "MQ-904-PL315ET40GB-Alarsis Corte industrial, S.L.U."
+  },
+  {
+    "KeyPedido": "MQ-903",
+    "FECHA": "2025-06-16T00:00:00",
+    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
+    "Máquina": "FRC412V7CTPT40",
+    "Código bastidor": "P0633.02",
+    "Observaciones de pedido": "ALARSIS STOCK",
+    "Estado MQ": "Finalizado",
+    "EntradaProd": "2025-06-18T00:00:00",
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2025-09-24T00:00:00",
+    "Fecha salida MQ": null,
+    "Etiqueta": "MQ-903-FRC412V7CTPT40-Alarsis Corte industrial, S.L.U."
   },
   {
     "KeyPedido": "MQ-906",
@@ -9435,21 +9435,6 @@
     "Etiqueta": "MQ-910-LS315P3-Muebles Romero"
   },
   {
-    "KeyPedido": "MQ-911",
-    "FECHA": "2025-07-22T00:00:00",
-    "CLIENTE": "Westaflex Iberica S.A.",
-    "Máquina": "FRC416V7CTPMTPNT40",
-    "Código bastidor": "P0644.02",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2025-09-12T00:00:00",
-    "Fecha Pentrega": "2025-10-09T00:00:00",
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": "2025-10-02T00:00:00",
-    "Fecha salida MQ": "2026-01-21T00:00:00",
-    "Etiqueta": "MQ-911-FRC416V7CTPMTPNT40-Westaflex Iberica S.A."
-  },
-  {
     "KeyPedido": "MQ-912",
     "FECHA": "2025-07-22T00:00:00",
     "CLIENTE": "Alarsis Corte industrial, S.L.U.",
@@ -9463,6 +9448,21 @@
     "Fecha fin Fab": "2025-10-13T00:00:00",
     "Fecha salida MQ": null,
     "Etiqueta": "MQ-912-FRC416V7CTPMTPNT40-Alarsis Corte industrial, S.L.U."
+  },
+  {
+    "KeyPedido": "MQ-911",
+    "FECHA": "2025-07-22T00:00:00",
+    "CLIENTE": "Westaflex Iberica S.A.",
+    "Máquina": "FRC416V7CTPMTPNT40",
+    "Código bastidor": "P0644.02",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2025-09-12T00:00:00",
+    "Fecha Pentrega": "2025-10-09T00:00:00",
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": "2025-10-02T00:00:00",
+    "Fecha salida MQ": "2026-01-21T00:00:00",
+    "Etiqueta": "MQ-911-FRC416V7CTPMTPNT40-Westaflex Iberica S.A."
   },
   {
     "KeyPedido": "MS-3",
@@ -9555,21 +9555,6 @@
     "Etiqueta": "MS-4-FRC412V7CTPT40-Alarsis Corte industrial, S.L.U."
   },
   {
-    "KeyPedido": "MQ-915",
-    "FECHA": "2025-09-05T00:00:00",
-    "CLIENTE": "Ortoibérica, S.L.",
-    "Máquina": "FVT100M3SVT40BR",
-    "Código bastidor": "P0660.00",
-    "Observaciones de pedido": null,
-    "Estado MQ": "Entregado",
-    "EntradaProd": "2025-11-07T00:00:00",
-    "Fecha Pentrega": "2025-11-14T00:00:00",
-    "ModFecha Pentrega": "2025-11-28T00:00:00",
-    "Fecha fin Fab": "2025-11-25T00:00:00",
-    "Fecha salida MQ": "2025-11-27T00:00:00",
-    "Etiqueta": "MQ-915-FVT100M3SVT40BR-Ortoibérica, S.L."
-  },
-  {
     "KeyPedido": "MQ-916",
     "FECHA": "2025-09-05T00:00:00",
     "CLIENTE": "Ernesto Jesús Rodriguez Padrón",
@@ -9583,6 +9568,21 @@
     "Fecha fin Fab": null,
     "Fecha salida MQ": null,
     "Etiqueta": "MQ-916-FRH210ALM3M23-Ernesto Jesús Rodriguez Padrón"
+  },
+  {
+    "KeyPedido": "MQ-915",
+    "FECHA": "2025-09-05T00:00:00",
+    "CLIENTE": "Ortoibérica, S.L.",
+    "Máquina": "FVT100M3SVT40BR",
+    "Código bastidor": "P0660.00",
+    "Observaciones de pedido": null,
+    "Estado MQ": "Entregado",
+    "EntradaProd": "2025-11-07T00:00:00",
+    "Fecha Pentrega": "2025-11-14T00:00:00",
+    "ModFecha Pentrega": "2025-11-28T00:00:00",
+    "Fecha fin Fab": "2025-11-25T00:00:00",
+    "Fecha salida MQ": "2025-11-27T00:00:00",
+    "Etiqueta": "MQ-915-FVT100M3SVT40BR-Ortoibérica, S.L."
   },
   {
     "KeyPedido": "MQ-917",
@@ -9705,6 +9705,21 @@
     "Etiqueta": "MS-7-FH350EV7A10T40-Alarsis Corte industrial, S.L.U."
   },
   {
+    "KeyPedido": "MS-8",
+    "FECHA": "2025-10-06T00:00:00",
+    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
+    "Máquina": "FRH70VCSVM1M23GBVX",
+    "Código bastidor": "P0641.04",
+    "Observaciones de pedido": "Pedido para Alarsis Stock",
+    "Estado MQ": "Finalizado",
+    "EntradaProd": "2025-10-07T00:00:00",
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": null,
+    "Fecha salida MQ": null,
+    "Etiqueta": "MS-8-FRH70VCSVM1M23GBVX-Alarsis Corte industrial, S.L.U."
+  },
+  {
     "KeyPedido": "MQ-922",
     "FECHA": "2025-10-06T00:00:00",
     "CLIENTE": "SilSoil, S.L.",
@@ -9720,11 +9735,11 @@
     "Etiqueta": "MQ-922-PL320HDT40GB-SilSoil, S.L."
   },
   {
-    "KeyPedido": "MS-8",
-    "FECHA": "2025-10-06T00:00:00",
+    "KeyPedido": "MS-9",
+    "FECHA": "2025-10-07T00:00:00",
     "CLIENTE": "Alarsis Corte industrial, S.L.U.",
     "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0641.04",
+    "Código bastidor": "P0641.05",
     "Observaciones de pedido": "Pedido para Alarsis Stock",
     "Estado MQ": "Finalizado",
     "EntradaProd": "2025-10-07T00:00:00",
@@ -9732,7 +9747,7 @@
     "ModFecha Pentrega": null,
     "Fecha fin Fab": null,
     "Fecha salida MQ": null,
-    "Etiqueta": "MS-8-FRH70VCSVM1M23GBVX-Alarsis Corte industrial, S.L.U."
+    "Etiqueta": "MS-9-FRH70VCSVM1M23GBVX-Alarsis Corte industrial, S.L.U."
   },
   {
     "KeyPedido": "MS-11",
@@ -9763,21 +9778,6 @@
     "Fecha fin Fab": null,
     "Fecha salida MQ": null,
     "Etiqueta": "MS-10-FRH165VSVM3T40BGVX-Alarsis Corte industrial, S.L.U."
-  },
-  {
-    "KeyPedido": "MS-9",
-    "FECHA": "2025-10-07T00:00:00",
-    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
-    "Máquina": "FRH70VCSVM1M23GBVX",
-    "Código bastidor": "P0641.05",
-    "Observaciones de pedido": "Pedido para Alarsis Stock",
-    "Estado MQ": "Finalizado",
-    "EntradaProd": "2025-10-07T00:00:00",
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": null,
-    "Fecha salida MQ": null,
-    "Etiqueta": "MS-9-FRH70VCSVM1M23GBVX-Alarsis Corte industrial, S.L.U."
   },
   {
     "KeyPedido": "MQ-923",
@@ -9930,21 +9930,6 @@
     "Etiqueta": "MS-16-FH350V10A10P20SET40-Alarsis Corte industrial, S.L.U."
   },
   {
-    "KeyPedido": "MQ-928",
-    "FECHA": "2025-11-25T00:00:00",
-    "CLIENTE": "INDIMCO Indústria de Impressão e Corte",
-    "Máquina": "FH350EV7A10T40",
-    "Código bastidor": "P0649.01",
-    "Observaciones de pedido": "Este pedido consume MS007 de STOCK",
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": null,
-    "Fecha salida MQ": "2025-12-03T00:00:00",
-    "Etiqueta": "MQ-928-FH350EV7A10T40-INDIMCO Indústria de Impressão e Corte"
-  },
-  {
     "KeyPedido": "MQ-929",
     "FECHA": "2025-11-25T00:00:00",
     "CLIENTE": "Escenoset",
@@ -9958,6 +9943,21 @@
     "Fecha fin Fab": "2026-01-30T00:00:00",
     "Fecha salida MQ": "2026-02-09T00:00:00",
     "Etiqueta": "MQ-929-CRT251-Escenoset"
+  },
+  {
+    "KeyPedido": "MQ-928",
+    "FECHA": "2025-11-25T00:00:00",
+    "CLIENTE": "INDIMCO Indústria de Impressão e Corte",
+    "Máquina": "FH350EV7A10T40",
+    "Código bastidor": "P0649.01",
+    "Observaciones de pedido": "Este pedido consume MS007 de STOCK",
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": null,
+    "Fecha salida MQ": "2025-12-03T00:00:00",
+    "Etiqueta": "MQ-928-FH350EV7A10T40-INDIMCO Indústria de Impressão e Corte"
   },
   {
     "KeyPedido": "MS-17",
@@ -10095,21 +10095,6 @@
     "Etiqueta": "MQ-937-FH250V7A5MTAT40-CANASANDI S.L."
   },
   {
-    "KeyPedido": "MQ-938",
-    "FECHA": "2025-12-17T00:00:00",
-    "CLIENTE": "FB.INTEC SL",
-    "Máquina": "FRC412V7CTPT40",
-    "Código bastidor": "P0633.02",
-    "Observaciones de pedido": "Este pedido consume MQ903 STOCK",
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": null,
-    "Fecha salida MQ": "2025-12-23T00:00:00",
-    "Etiqueta": "MQ-938-FRC412V7CTPT40-FB.INTEC SL"
-  },
-  {
     "KeyPedido": "MQ-939",
     "FECHA": "2025-12-17T00:00:00",
     "CLIENTE": "ALP INTERNATIONAL S.R.L.",
@@ -10123,6 +10108,21 @@
     "Fecha fin Fab": "2026-02-26T00:00:00",
     "Fecha salida MQ": "2026-03-05T00:00:00",
     "Etiqueta": "MQ-939-FRC412V7CTPT40UB-ALP INTERNATIONAL S.R.L."
+  },
+  {
+    "KeyPedido": "MQ-938",
+    "FECHA": "2025-12-17T00:00:00",
+    "CLIENTE": "FB.INTEC SL",
+    "Máquina": "FRC412V7CTPT40",
+    "Código bastidor": "P0633.02",
+    "Observaciones de pedido": "Este pedido consume MQ903 STOCK",
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": null,
+    "Fecha salida MQ": "2025-12-23T00:00:00",
+    "Etiqueta": "MQ-938-FRC412V7CTPT40-FB.INTEC SL"
   },
   {
     "KeyPedido": "MQ-940",
@@ -10350,21 +10350,6 @@
     "Etiqueta": "MS-21-FH125EPV7A10T40-Alarsis Corte industrial, S.L.U."
   },
   {
-    "KeyPedido": "MS-23",
-    "FECHA": "2026-02-17T00:00:00",
-    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
-    "Máquina": "FRC412V7CTPT40",
-    "Código bastidor": "P0669.04",
-    "Observaciones de pedido": "Pedido para stock Alarsis. Se consume en MQ956",
-    "Estado MQ": "Producción",
-    "EntradaProd": null,
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": null,
-    "Fecha salida MQ": null,
-    "Etiqueta": "MS-23-FRC412V7CTPT40-Alarsis Corte industrial, S.L.U."
-  },
-  {
     "KeyPedido": "MS-22",
     "FECHA": "2026-02-17T00:00:00",
     "CLIENTE": "Alarsis Corte industrial, S.L.U.",
@@ -10378,6 +10363,21 @@
     "Fecha fin Fab": null,
     "Fecha salida MQ": null,
     "Etiqueta": "MS-22-FRC416V7CTPMTPNT40-Alarsis Corte industrial, S.L.U."
+  },
+  {
+    "KeyPedido": "MS-23",
+    "FECHA": "2026-02-17T00:00:00",
+    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
+    "Máquina": "FRC412V7CTPT40",
+    "Código bastidor": "P0669.04",
+    "Observaciones de pedido": "Pedido para stock Alarsis. Se consume en MQ956",
+    "Estado MQ": "Producción",
+    "EntradaProd": null,
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": null,
+    "Fecha salida MQ": null,
+    "Etiqueta": "MS-23-FRC412V7CTPT40-Alarsis Corte industrial, S.L.U."
   },
   {
     "KeyPedido": "MQ-951",
@@ -10401,12 +10401,12 @@
     "Máquina": "FRC316V7CTPMTT40",
     "Código bastidor": "P0667.02",
     "Observaciones de pedido": null,
-    "Estado MQ": "Picking",
+    "Estado MQ": "Entregado",
     "EntradaProd": "2026-03-16T00:00:00",
     "Fecha Pentrega": "2026-05-28T00:00:00",
     "ModFecha Pentrega": "2026-04-15T00:00:00",
-    "Fecha fin Fab": null,
-    "Fecha salida MQ": null,
+    "Fecha fin Fab": "2026-04-10T00:00:00",
+    "Fecha salida MQ": "2026-04-13T00:00:00",
     "Etiqueta": "MQ-952-FRC316V7CTPMTT40-Rios Hermanos"
   },
   {
@@ -10470,21 +10470,6 @@
     "Etiqueta": "MS-26-PLC316V7MTT40-Alarsis Corte industrial, S.L.U."
   },
   {
-    "KeyPedido": "MQ-954",
-    "FECHA": "2026-03-10T00:00:00",
-    "CLIENTE": "EQUIZONE BATH, S.L.",
-    "Máquina": "FH350V10A10P20SET40",
-    "Código bastidor": "P0649.02",
-    "Observaciones de pedido": "Ojo, sin bomba de vacío. la pone el cliente. Consume MS016",
-    "Estado MQ": "Entregado",
-    "EntradaProd": null,
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": null,
-    "Fecha salida MQ": "2026-03-16T00:00:00",
-    "Etiqueta": "MQ-954-FH350V10A10P20SET40-EQUIZONE BATH, S.L."
-  },
-  {
     "KeyPedido": "MS-27",
     "FECHA": "2026-03-10T00:00:00",
     "CLIENTE": "Alarsis Corte industrial, S.L.U.",
@@ -10498,6 +10483,21 @@
     "Fecha fin Fab": null,
     "Fecha salida MQ": null,
     "Etiqueta": "MS-27-FRH350V7A32MTSVT40-Alarsis Corte industrial, S.L.U."
+  },
+  {
+    "KeyPedido": "MQ-954",
+    "FECHA": "2026-03-10T00:00:00",
+    "CLIENTE": "EQUIZONE BATH, S.L.",
+    "Máquina": "FH350V10A10P20SET40",
+    "Código bastidor": "P0649.02",
+    "Observaciones de pedido": "Ojo, sin bomba de vacío. la pone el cliente. Consume MS016",
+    "Estado MQ": "Entregado",
+    "EntradaProd": null,
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": null,
+    "Fecha salida MQ": "2026-03-16T00:00:00",
+    "Etiqueta": "MQ-954-FH350V10A10P20SET40-EQUIZONE BATH, S.L."
   },
   {
     "KeyPedido": "MQ-955",
@@ -10515,21 +10515,6 @@
     "Etiqueta": "MQ-955-FH450EV10A10T40-MAS PROJECTS"
   },
   {
-    "KeyPedido": "MS-29",
-    "FECHA": "2026-03-13T00:00:00",
-    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
-    "Máquina": "FRC412V7CTPT40",
-    "Código bastidor": "P0677.02",
-    "Observaciones de pedido": "Alarsis Stock",
-    "Estado MQ": "Picking",
-    "EntradaProd": "2026-04-27T00:00:00",
-    "Fecha Pentrega": null,
-    "ModFecha Pentrega": null,
-    "Fecha fin Fab": null,
-    "Fecha salida MQ": null,
-    "Etiqueta": "MS-29-FRC412V7CTPT40-Alarsis Corte industrial, S.L.U."
-  },
-  {
     "KeyPedido": "MS-28",
     "FECHA": "2026-03-13T00:00:00",
     "CLIENTE": "Alarsis Corte industrial, S.L.U.",
@@ -10543,6 +10528,21 @@
     "Fecha fin Fab": null,
     "Fecha salida MQ": null,
     "Etiqueta": "MS-28-FRC412V7CTPT40-Alarsis Corte industrial, S.L.U."
+  },
+  {
+    "KeyPedido": "MS-29",
+    "FECHA": "2026-03-13T00:00:00",
+    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
+    "Máquina": "FRC412V7CTPT40",
+    "Código bastidor": "P0677.02",
+    "Observaciones de pedido": "Alarsis Stock",
+    "Estado MQ": "Picking",
+    "EntradaProd": "2026-04-27T00:00:00",
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": null,
+    "Fecha salida MQ": null,
+    "Etiqueta": "MS-29-FRC412V7CTPT40-Alarsis Corte industrial, S.L.U."
   },
   {
     "KeyPedido": "MQ-956",
@@ -10725,6 +10725,21 @@
     "Etiqueta": "MQ-966-PLC330V7MTAT40-INFINITAS MILLAS, S.L. (TAPIBLUE)"
   },
   {
+    "KeyPedido": "MS-31",
+    "FECHA": "2026-04-01T00:00:00",
+    "CLIENTE": "Alarsis Corte industrial, S.L.U.",
+    "Máquina": "FRC412V7CTPT40",
+    "Código bastidor": "P0677.03",
+    "Observaciones de pedido": "STOCK ALARSIS",
+    "Estado MQ": "Pendiente",
+    "EntradaProd": "2026-05-08T00:00:00",
+    "Fecha Pentrega": null,
+    "ModFecha Pentrega": null,
+    "Fecha fin Fab": null,
+    "Fecha salida MQ": null,
+    "Etiqueta": "MS-31-FRC412V7CTPT40-Alarsis Corte industrial, S.L.U."
+  },
+  {
     "KeyPedido": "MS-32",
     "FECHA": "2026-04-01T00:00:00",
     "CLIENTE": "Alarsis Corte industrial, S.L.U.",
@@ -10740,18 +10755,18 @@
     "Etiqueta": "MS-32-FRC412V7CTPT40-Alarsis Corte industrial, S.L.U."
   },
   {
-    "KeyPedido": "MS-31",
-    "FECHA": "2026-04-01T00:00:00",
+    "KeyPedido": "MS-33",
+    "FECHA": "2026-04-14T00:00:00",
     "CLIENTE": "Alarsis Corte industrial, S.L.U.",
-    "Máquina": "FRC412V7CTPT40",
-    "Código bastidor": "P0677.03",
-    "Observaciones de pedido": "STOCK ALARSIS",
+    "Máquina": "FH250EV7A10MTT40",
+    "Código bastidor": null,
+    "Observaciones de pedido": "Consultar Juanma (Prototipo I+D)",
     "Estado MQ": "Pendiente",
-    "EntradaProd": "2026-05-08T00:00:00",
+    "EntradaProd": "2026-06-26T00:00:00",
     "Fecha Pentrega": null,
     "ModFecha Pentrega": null,
     "Fecha fin Fab": null,
     "Fecha salida MQ": null,
-    "Etiqueta": "MS-31-FRC412V7CTPT40-Alarsis Corte industrial, S.L.U."
+    "Etiqueta": "MS-33-FH250EV7A10MTT40-Alarsis Corte industrial, S.L.U."
   }
 ]
